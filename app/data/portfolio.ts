@@ -372,8 +372,7 @@ export const portfolio = {
     address: 'Hoa Xuan, Cam Le, Da Nang',
     facebook: 'facebook.com/thanhdat130298',
     facebookUrl: 'https://facebook.com/thanhdat130298',
-    // Set after deploy, e.g. 'https://your-portfolio.vercel.app'
-    demoUrl: '',
+    demoUrl: 'https://my-portfolio-drab-phi-hko31oj1lt.vercel.app/',
   } as ContactInfo,
 
   languages: [
