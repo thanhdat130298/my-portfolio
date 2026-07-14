@@ -38,20 +38,23 @@ function onSubmit() {
 }
 
 const charCount = computed(() => draft.value.length)
+const { t } = useI18n()
 </script>
 
 <template>
   <div class="room">
     <div class="meta">
-      <p class="hello">Xin chào, <strong>{{ visitorName }}</strong></p>
+      <p class="hello">
+        {{ t('chat.hello', { name: visitorName }) }}
+      </p>
       <p v-if="banned" class="quota limited">
-        Chat đã bị khóa vì ngôn từ không phù hợp.
+        {{ t('chat.quotaBanned') }}
       </p>
       <p v-else-if="!limited" class="quota">
-        Còn <strong>{{ remaining }}</strong> / {{ quota?.limit ?? 7 }} câu hỏi hôm nay
+        {{ t('chat.quotaLeft', { remaining, limit: quota?.limit ?? 7 }) }}
       </p>
       <p v-else class="quota limited">
-        Bạn đã đạt giới hạn câu hỏi, hãy quay lại vào ngày mai.
+        {{ t('chat.quotaDone') }}
       </p>
     </div>
 
@@ -61,7 +64,7 @@ const charCount = computed(() => draft.value.length)
         :key="message.id"
         :message="message"
       />
-      <p v-if="loading" class="typing">Đang nghĩ…</p>
+      <p v-if="loading" class="typing">{{ t('chat.typing') }}</p>
     </div>
 
     <div v-if="!banned && (limited || messages.length <= 1)" class="faq">
@@ -73,13 +76,13 @@ const charCount = computed(() => draft.value.length)
 
     <form v-if="!limited && !banned" class="composer" @submit.prevent="onSubmit">
       <div class="field">
-        <label class="sr-only" for="chat-question">Câu hỏi</label>
+        <label class="sr-only" for="chat-question">{{ t('chat.questionLabel') }}</label>
         <input
           id="chat-question"
           v-model="draft"
           type="text"
           :maxlength="maxChars"
-          placeholder="Hỏi về Đạt… (tối đa 200 ký tự)"
+          :placeholder="t('chat.placeholder')"
           autocomplete="off"
           :disabled="loading"
         >
@@ -92,7 +95,7 @@ const charCount = computed(() => draft.value.length)
         type="submit"
         :disabled="loading || !draft.trim()"
       >
-        Gửi
+        {{ t('chat.send') }}
       </button>
     </form>
   </div>
@@ -133,7 +136,7 @@ const charCount = computed(() => draft.value.length)
   padding: 1rem;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.55);
+  background: color-mix(in srgb, var(--color-surface-elevated) 85%, transparent);
 }
 
 .typing {

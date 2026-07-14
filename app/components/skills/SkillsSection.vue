@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { portfolio } from '~/data/portfolio'
+const { t } = useI18n()
+const { skillsFrontendItems, skillsBackendItems, languages } = useLocalizedPortfolio()
 </script>
 
 <template>
@@ -7,42 +8,42 @@ import { portfolio } from '~/data/portfolio'
     <div class="container">
       <RevealOnScroll>
         <SectionHeading
-          label="Technical stack"
-          title="Frontend first — fullstack in progress"
-          lead="Core strength on the UI side; backend skills from real FPT/Permate work as the path toward fullstack."
+          :label="t('sections.skills.label')"
+          :title="t('sections.skills.title')"
+          :lead="t('sections.skills.lead')"
         />
       </RevealOnScroll>
 
       <RevealOnScroll>
         <div class="lanes">
           <article class="lane primary">
-            <p class="lane-label">Primary</p>
-            <h3>{{ portfolio.skillsFrontend.title }}</h3>
-            <p class="lane-lead">{{ portfolio.skillsFrontend.lead }}</p>
+            <p class="lane-label">{{ t('sections.skills.primary') }}</p>
+            <h3>{{ t('sections.skills.frontendTitle') }}</h3>
+            <p class="lane-lead">{{ t('sections.skills.frontendLead') }}</p>
             <ul>
-              <li v-for="item in portfolio.skillsFrontend.items" :key="item">{{ item }}</li>
+              <li v-for="item in skillsFrontendItems" :key="item">{{ item }}</li>
             </ul>
           </article>
 
           <article class="lane">
-            <p class="lane-label">Also worked with</p>
-            <h3>{{ portfolio.skillsBackend.title }}</h3>
-            <p class="lane-lead">{{ portfolio.skillsBackend.lead }}</p>
+            <p class="lane-label">{{ t('sections.skills.also') }}</p>
+            <h3>{{ t('sections.skills.backendTitle') }}</h3>
+            <p class="lane-lead">{{ t('sections.skills.backendLead') }}</p>
             <ul>
-              <li v-for="item in portfolio.skillsBackend.items" :key="item">{{ item }}</li>
+              <li v-for="item in skillsBackendItems" :key="item">{{ item }}</li>
             </ul>
           </article>
         </div>
 
         <div class="meta">
           <div>
-            <h4>Working style</h4>
-            <p>{{ portfolio.softSkills.join(' · ') }}</p>
+            <h4>{{ t('sections.skills.workingStyle') }}</h4>
+            <p>{{ t('sections.skills.softSkills') }}</p>
           </div>
           <div>
-            <h4>Languages</h4>
+            <h4>{{ t('sections.skills.languages') }}</h4>
             <ul>
-              <li v-for="lang in portfolio.languages" :key="lang.name">
+              <li v-for="lang in languages" :key="lang.name">
                 <strong>{{ lang.name }}</strong> — {{ lang.level }}
               </li>
             </ul>
@@ -68,8 +69,8 @@ import { portfolio } from '~/data/portfolio'
 }
 
 .lane.primary {
-  background: linear-gradient(180deg, var(--color-accent-soft), #fff);
-  border-color: rgba(249, 115, 22, 0.28);
+  background: linear-gradient(180deg, var(--color-accent-soft), var(--color-surface-elevated));
+  border-color: var(--color-accent-border);
 }
 
 .lane-label {
@@ -102,13 +103,13 @@ import { portfolio } from '~/data/portfolio'
 }
 
 .lane li {
-  background: rgba(255, 255, 255, 0.85);
+  background: color-mix(in srgb, var(--color-surface) 70%, var(--color-surface-elevated));
   border: 1px solid var(--color-line);
   padding: 0.35rem 0.7rem;
   border-radius: var(--radius-sm);
   font-size: 0.92rem;
   font-weight: 600;
-  color: var(--color-ink-soft);
+  color: var(--color-ink);
 }
 
 .meta {

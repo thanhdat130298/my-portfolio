@@ -1,26 +1,33 @@
-:root {
+:root,
+html[data-theme='light'] {
   /* Cloned from Koder shelter preview (Tailwind orange → purple) */
   --color-ink: #18181b;
   --color-ink-soft: #3f3f46;
   --color-muted: #4b5563;
-  --color-surface: #fff7ed;
+  --color-surface: #ffedd5;
   --color-surface-elevated: #ffffff;
   --color-accent: #f97316;
   --color-accent-deep: #ea580c;
-  --color-accent-soft: #ffedd5;
-  --color-accent-border: #fed7aa;
+  --color-accent-soft: #fed7aa;
+  --color-accent-border: #fdba74;
   --color-purple: #9333ea;
   --color-purple-deep: #7e22ce;
-  --color-purple-soft: #faf5ff;
+  --color-purple-soft: #edd5ff;
   --color-purple-mid: #a855f7;
   --color-pink: #ec4899;
   --color-line: rgba(24, 24, 27, 0.1);
-  --color-hero-a: #fff7ed;
-  --color-hero-b: #ffffff;
-  --color-hero-c: #faf5ff;
+  --color-hero-a: #ffedd5;
+  --color-hero-b: #fff7ed;
+  --color-hero-c: #f3e8ff;
+  --color-header-bg: rgba(255, 247, 237, 0.92);
+  --color-nav-bg: rgba(255, 247, 237, 0.96);
   --gradient-brand: linear-gradient(90deg, #f97316 0%, #9333ea 100%);
   --gradient-brand-hover: linear-gradient(90deg, #ea580c 0%, #7e22ce 100%);
-  --gradient-page: linear-gradient(180deg, #fff7ed 0%, #ffffff 45%, #faf5ff 100%);
+  --gradient-page:
+    radial-gradient(ellipse 90% 55% at 8% -10%, rgba(249, 115, 22, 0.28), transparent 58%),
+    radial-gradient(ellipse 80% 50% at 100% 8%, rgba(147, 51, 234, 0.2), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 50% 100%, rgba(236, 72, 153, 0.1), transparent 55%),
+    linear-gradient(180deg, #ffedd5 0%, #fff1e6 38%, #f5e8ff 100%);
   --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-display: var(--font-sans);
   --font-body: var(--font-sans);
@@ -31,6 +38,36 @@
   --container: 1280px;
   --container-pad: clamp(1rem, 3.5vw, 2rem);
   --header-h: 4.5rem;
+}
+
+html[data-theme='dark'] {
+  --color-ink: #fcfaf6;
+  --color-ink-soft: #ebe4d8;
+  --color-muted: #c9bfb0;
+  --color-surface: #241c16;
+  --color-surface-elevated: #32281f;
+  --color-accent: #fb923c;
+  --color-accent-deep: #fdba74;
+  --color-accent-soft: rgba(249, 115, 22, 0.28);
+  --color-accent-border: rgba(249, 115, 22, 0.45);
+  --color-purple: #d8b4fe;
+  --color-purple-deep: #c084fc;
+  --color-purple-soft: rgba(168, 85, 247, 0.26);
+  --color-purple-mid: #e9d5ff;
+  --color-pink: #f9a8d4;
+  --color-line: rgba(252, 250, 246, 0.14);
+  --color-hero-a: #241c16;
+  --color-hero-b: #2a2018;
+  --color-hero-c: #23182c;
+  --color-header-bg: rgba(36, 28, 22, 0.92);
+  --color-nav-bg: rgba(36, 28, 22, 0.97);
+  --gradient-brand: linear-gradient(90deg, #fb923c 0%, #c084fc 100%);
+  --gradient-brand-hover: linear-gradient(90deg, #f97316 0%, #a855f7 100%);
+  --gradient-page:
+    radial-gradient(ellipse 90% 55% at 0% -5%, rgba(249, 115, 22, 0.22), transparent 55%),
+    radial-gradient(ellipse 80% 50% at 100% 10%, rgba(168, 85, 247, 0.2), transparent 52%),
+    linear-gradient(180deg, #241c16 0%, #1f1824 50%, #1a1422 100%);
+  --shadow-soft: 0 18px 50px rgba(0, 0, 0, 0.35);
 }
 
 *,
@@ -60,7 +97,7 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: 0.03;
+  opacity: 0.045;
   z-index: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }

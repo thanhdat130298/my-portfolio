@@ -1,33 +1,55 @@
 <script setup lang="ts">
 import type { ExperienceItem } from '~/data/portfolio'
 
-defineProps<{
+const props = defineProps<{
   item: ExperienceItem
+  defaultOpen?: boolean
 }>()
+
+const open = ref(props.defaultOpen === true)
+const panelId = `exp-panel-${props.item.id}`
+
+function toggle() {
+  open.value = !open.value
+}
 </script>
 
 <template>
-  <article class="item">
+  <article class="item" :class="{ 'is-open': open }">
     <div class="rail" aria-hidden="true" />
     <div class="body">
-      <div class="top">
-        <h3>{{ item.company }}</h3>
-        <p class="period">{{ item.period }}</p>
+      <button
+        class="toggle"
+        type="button"
+        :aria-expanded="open"
+        :aria-controls="panelId"
+        @click="toggle"
+      >
+        <div class="top">
+          <h3>{{ item.company }}</h3>
+          <p class="period">{{ item.period }}</p>
+        </div>
+        <p class="role">{{ item.role }}</p>
+        <span class="chevron" aria-hidden="true" />
+      </button>
+
+      <div :id="panelId" class="panel" role="region">
+        <div class="panel-inner">
+          <ul v-if="item.achievements?.length" class="achievements">
+            <li v-for="award in item.achievements" :key="award">{{ award }}</li>
+          </ul>
+          <ul class="projects">
+            <li v-for="project in item.projects" :key="project.name + project.period">
+              <strong>{{ project.name }}</strong>
+              <span class="when">{{ project.period }}</span>
+              <p>{{ project.summary }}</p>
+              <div v-if="project.stack?.length" class="stack">
+                <span v-for="tech in project.stack" :key="tech">{{ tech }}</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <p class="role">{{ item.role }}</p>
-      <ul v-if="item.achievements?.length" class="achievements">
-        <li v-for="award in item.achievements" :key="award">{{ award }}</li>
-      </ul>
-      <ul>
-        <li v-for="project in item.projects" :key="project.name + project.period">
-          <strong>{{ project.name }}</strong>
-          <span class="when">{{ project.period }}</span>
-          <p>{{ project.summary }}</p>
-          <div v-if="project.stack?.length" class="stack">
-            <span v-for="tech in project.stack" :key="tech">{{ tech }}</span>
-          </div>
-        </li>
-      </ul>
     </div>
   </article>
 </template>
@@ -61,6 +83,24 @@ defineProps<{
   box-shadow: 0 0 0 4px var(--color-accent-soft);
 }
 
+.toggle {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0.15rem 2rem 0.15rem 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+
+.toggle:focus-visible {
+  outline: 2px solid rgba(249, 115, 22, 0.35);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}
+
 .top {
   display: flex;
   flex-wrap: wrap;
@@ -82,9 +122,45 @@ h3 {
 }
 
 .role {
-  margin: 0.2rem 0 0.65rem;
+  margin: 0.2rem 0 0;
   font-weight: 700;
   color: var(--color-accent);
+}
+
+.chevron {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.1rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid var(--color-ink-soft);
+  border-bottom: 2px solid var(--color-ink-soft);
+  transform: rotate(45deg);
+  transition: transform 0.25s ease;
+}
+
+.item.is-open .chevron {
+  top: 0.75rem;
+  transform: rotate(225deg);
+}
+
+.panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.28s ease;
+}
+
+.item.is-open .panel {
+  grid-template-rows: 1fr;
+}
+
+.panel-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.item.is-open .panel-inner {
+  padding-top: 0.9rem;
 }
 
 .achievements {
@@ -106,7 +182,7 @@ h3 {
   border-radius: 999px;
 }
 
-ul {
+.projects {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -114,7 +190,7 @@ ul {
   gap: 1.1rem;
 }
 
-li p {
+.projects li p {
   margin: 0.25rem 0 0;
   color: var(--color-ink-soft);
 }
@@ -138,5 +214,12 @@ li p {
   background: rgba(249, 115, 22, 0.08);
   padding: 0.22rem 0.5rem;
   border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel,
+  .chevron {
+    transition: none;
+  }
 }
 </style>

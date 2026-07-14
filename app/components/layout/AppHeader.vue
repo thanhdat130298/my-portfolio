@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { portfolio } from '~/data/portfolio'
+const { t, locale, setLocale } = useI18n()
+const { brand, nav } = useLocalizedPortfolio()
+const { isDark, toggleTheme } = useTheme()
 
 const open = ref(false)
 const scrolled = ref(false)
@@ -12,24 +14,42 @@ function closeNav() {
   open.value = false
 }
 
+async function switchLocale(code: 'en' | 'vi') {
+  await setLocale(code)
+  if (import.meta.client) {
+    document.documentElement.setAttribute('lang', code === 'vi' ? 'vi' : 'en')
+  }
+  closeNav()
+}
+
 onMounted(() => {
   onScroll()
   window.addEventListener('scroll', onScroll, { passive: true })
+  document.documentElement.setAttribute('lang', locale.value === 'vi' ? 'vi' : 'en')
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', onScroll)
 })
+
+useHead(() => ({
+  title: t('meta.title'),
+  meta: [{ name: 'description', content: t('meta.description') }],
+  htmlAttrs: {
+    lang: locale.value === 'vi' ? 'vi' : 'en',
+    'data-theme': isDark.value ? 'dark' : 'light',
+  },
+}))
 </script>
 
 <template>
   <header class="header" :class="{ 'is-scrolled': scrolled }">
     <div class="container header-inner">
-      <a class="brand text-gradient" href="#top" @click="closeNav">{{ portfolio.brand }}</a>
+      <a class="brand text-gradient" href="#top" @click="closeNav">{{ brand }}</a>
 
       <nav id="site-nav" class="nav" :class="{ 'is-open': open }">
         <a
-          v-for="link in portfolio.nav"
+          v-for="link in nav"
           :key="link.href"
           :href="link.href"
           @click="closeNav"
@@ -37,18 +57,47 @@ onBeforeUnmount(() => {
           {{ link.label }}
         </a>
         <a class="btn btn-primary nav-cta mobile-only" href="#contact" @click="closeNav">
-          Contact Me
+          {{ t('ui.contactMe') }}
         </a>
       </nav>
 
       <div class="aside">
-        <a class="btn btn-primary nav-cta desktop-only" href="#contact">Contact Me</a>
+        <div class="prefs" role="group" :aria-label="t('ui.switchLanguage')">
+          <button
+            type="button"
+            class="pref-btn"
+            :class="{ 'is-active': locale === 'en' }"
+            :aria-pressed="locale === 'en'"
+            @click="switchLocale('en')"
+          >
+            {{ t('ui.langEn') }}
+          </button>
+          <button
+            type="button"
+            class="pref-btn"
+            :class="{ 'is-active': locale === 'vi' }"
+            :aria-pressed="locale === 'vi'"
+            @click="switchLocale('vi')"
+          >
+            {{ t('ui.langVi') }}
+          </button>
+        </div>
+        <button
+          type="button"
+          class="prefs theme-toggle"
+          :aria-label="t('ui.toggleTheme')"
+          :aria-pressed="isDark"
+          @click="toggleTheme"
+        >
+          <span class="pref-btn is-active">{{ isDark ? t('ui.themeLight') : t('ui.themeDark') }}</span>
+        </button>
+        <a class="btn btn-primary nav-cta desktop-only" href="#contact">{{ t('ui.contactMe') }}</a>
         <button
           class="menu-toggle"
           type="button"
           :aria-expanded="open"
           aria-controls="site-nav"
-          aria-label="Toggle navigation"
+          :aria-label="t('ui.toggleNav')"
           @click="open = !open"
         >
           <span />
@@ -71,7 +120,7 @@ onBeforeUnmount(() => {
 }
 
 .header.is-scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-header-bg);
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 20px rgba(24, 24, 27, 0.08);
 }
@@ -122,6 +171,46 @@ onBeforeUnmount(() => {
   flex-shrink: 0;
 }
 
+.prefs {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-elevated);
+}
+
+.pref-btn {
+  border: 0;
+  background: transparent;
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.pref-btn:hover,
+.pref-btn.is-active {
+  color: var(--color-ink);
+  background: var(--color-accent-soft);
+}
+
+.theme-toggle {
+  cursor: pointer;
+  padding: 0.2rem;
+}
+
+.theme-toggle .pref-btn {
+  pointer-events: none;
+  min-width: 3.1rem;
+  text-align: center;
+}
+
 .mobile-only {
   display: none;
 }
@@ -168,7 +257,7 @@ onBeforeUnmount(() => {
     align-items: flex-start;
     gap: 0;
     padding: 0.75rem var(--container-pad) 1.25rem;
-    background: rgba(255, 255, 255, 0.97);
+    background: var(--color-nav-bg);
     border-bottom: 1px solid var(--color-line);
     transform: translateY(-120%);
     opacity: 0;
@@ -186,6 +275,17 @@ onBeforeUnmount(() => {
     width: 100%;
     padding: 0.85rem 0;
     border-bottom: 1px solid var(--color-line);
+  }
+}
+
+@media (max-width: 480px) {
+  .prefs {
+    gap: 0.1rem;
+  }
+
+  .pref-btn {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.68rem;
   }
 }
 </style>

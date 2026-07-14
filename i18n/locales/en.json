@@ -1,0 +1,352 @@
+{
+  "meta": {
+    "title": "Dat Nguyen — Web Developer",
+    "description": "Nguyen Thanh Dat — Web Developer with 5+ years of experience in Vue, React, Nuxt, and Next. Based in Da Nang, Vietnam."
+  },
+  "ui": {
+    "contactMe": "Contact Me",
+    "toggleNav": "Toggle navigation",
+    "toggleTheme": "Toggle color theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "langEn": "EN",
+    "langVi": "VI",
+    "switchLanguage": "Switch language",
+    "demo": "Live demo",
+    "github": "GitHub",
+    "stack": "Stack",
+    "idea": "Core idea",
+    "scrollToChat": "Meet Dat AI",
+    "scrollToTop": "Back to top"
+  },
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "skills": "Skills",
+    "career": "Career",
+    "meetDat": "Meet Dat",
+    "contact": "Contact",
+    "personal": "Personal Projects"
+  },
+  "hero": {
+    "welcome": "Hi, I'm",
+    "viewProjects": "View Projects",
+    "highlights": "Highlights",
+    "floatLabel": "Years building web apps",
+    "bannerAlt": "{name} — portfolio banner",
+    "role": "Web Developer · Frontend → Fullstack",
+    "location": "Da Nang, Vietnam",
+    "summary": "Primarily a frontend developer with 5+ years building UIs in Vue, React, Nuxt, and Next — strong on UI/UX, components, and responsive product screens. Also hands-on with Java/Spring Boot and APIs from real projects, with a clear path toward fullstack delivery.",
+    "stats": {
+      "projects": "Projects shipped",
+      "companies": "Companies & freelance",
+      "years": "Years of experience"
+    }
+  },
+  "sections": {
+    "projects": {
+      "label": "Featured work",
+      "title": "Projects that shaped the craft",
+      "lead": "Selected product, channel, landing, and backend work — frontend-led delivery with fullstack exposure."
+    },
+    "profile": {
+      "badge": "Frontend first · Fullstack-bound · Da Nang",
+      "caption": "Nguyen Thanh Dat — frontend-focused web developer (Vue / React / Nuxt / Next), expanding toward fullstack with Spring Boot and API work.",
+      "education": "Education: Informatics Teacher Education — The University of Danang, University of Education.",
+      "title": "Frontend craft, fullstack ambition"
+    },
+    "about": {
+      "label": "About",
+      "title": "Frontend first, fullstack direction",
+      "intro": "Since 2020 I have shipped mostly on the frontend — design to production UI, components, and client flows — while picking up backend work on real products. Frontend is the core strength; fullstack is the direction.",
+      "lookingFor": "Open to frontend-heavy roles with room to grow as a fullstack developer — modern teams, solid product craft, and AI-assisted workflows.",
+      "points": {
+        "objective": {
+          "title": "Objective",
+          "text": "Keep shipping excellent frontend experiences while deepening backend skills to operate confidently as a fullstack developer."
+        },
+        "mission": {
+          "title": "Mission",
+          "text": "Turn designs into fast, responsive interfaces people enjoy — with clean components, solid UX, and enough API/backend fluency to own features end-to-end when needed."
+        },
+        "approach": {
+          "title": "Approach",
+          "text": "Frontend-first by default; jump into Java/Spring Boot or mobile when the product needs full-feature ownership across the stack."
+        }
+      }
+    },
+    "skills": {
+      "label": "Technical stack",
+      "title": "Frontend first — fullstack in progress",
+      "lead": "Core strength on the UI side; backend skills from real FPT/Permate work as the path toward fullstack.",
+      "primary": "Primary",
+      "also": "Also worked with",
+      "frontendTitle": "Frontend",
+      "frontendLead": "Main craft — UI systems, responsive layouts, and product screens.",
+      "backendTitle": "Backend",
+      "backendLead": "Growing fullstack path — APIs and services from FPT/Permate and real delivery work.",
+      "workingStyle": "Working style",
+      "languages": "Languages",
+      "softSkills": "Teamwork · Attention to detail · Fast learner · Deadline-driven · Responsible ownership · Clear communication",
+      "langVi": "Vietnamese",
+      "langViLevel": "Native",
+      "langEn": "English",
+      "langEnLevel": "B1 — reading & basic communication"
+    },
+    "career": {
+      "label": "Career notes",
+      "title": "Places and projects along the way",
+      "lead": "Instead of fake testimonials — real teams and products from the CV timeline."
+    },
+    "contact": {
+      "label": "Visit / reach out",
+      "title": "Let’s talk about the next build",
+      "lead": "Open to frontend-heavy roles with a fullstack growth path. Prefer email for opportunities.",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "facebook": "Facebook",
+      "sendEmail": "Send an email",
+      "openFacebook": "Open Facebook",
+      "liveDemo": "Live demo",
+      "addressValue": "Hoa Xuan, Cam Le, Da Nang"
+    },
+    "personal": {
+      "label": "Side builds",
+      "title": "Personal projects",
+      "lead": "Experiments and side products — each with a core idea, stack, demo, and GitHub source."
+    }
+  },
+  "projects": {
+    "permate": {
+      "period": "Aug 2023 – Present",
+      "description": "Affiliate marketing platform — main ownership on web UI/UX from designs and client flows, plus API wiring, code review, backend support when needed, and Flutter app features for the mobile product on a 20-person team.",
+      "highlights": [
+        "Web UI/UX (Vue / Nuxt)",
+        "Flutter app screens & flows",
+        "API integration & code review"
+      ]
+    },
+    "lgu": {
+      "period": "Oct 2021 – May 2022",
+      "description": "Digital services channel for end users. Built shared components, screens from a base library, API integrations, unit tests, and coordinated with BA/BrSE/clients on a team of 11.",
+      "highlights": [
+        "Common component library",
+        "Screen & API integration",
+        "Unit tests per screen"
+      ]
+    },
+    "dsh": {
+      "period": "Jul 2021 – Sep 2021",
+      "description": "Marketing landing pages for a blockchain product — pages, components, business logic, and full responsive delivery with design-system tooling.",
+      "highlights": [
+        "Responsive landing pages",
+        "Component-driven UI",
+        "Storybook workflow"
+      ]
+    },
+    "cinvest": {
+      "period": "Jun 2022 – Aug 2022",
+      "description": "Landing page and page/component implementation with React and Next.js in a team of four.",
+      "highlights": [
+        "Landing page",
+        "Reusable components"
+      ]
+    },
+    "vf-framework": {
+      "period": "May 2023 – Aug 2023",
+      "description": "Migrated legacy MyBatis data flows to Spring Boot JPA while keeping results aligned with the existing system — API and persistence work on a Java backend modernization track.",
+      "highlights": [
+        "MyBatis → Spring Boot JPA migration",
+        "Legacy-compatible query/results",
+        "REST / service layer support"
+      ]
+    },
+    "survey": {
+      "period": "Mar 2021 – Jul 2021",
+      "description": "React Native app for factory worker surveys, health evaluations, blogs, and Q&A — Figma-driven UI with backend coordination and bug fixing.",
+      "highlights": [
+        "Figma to mobile UI",
+        "App logic & flows"
+      ]
+    }
+  },
+  "experience": {
+    "permate": {
+      "role": "Developer",
+      "period": "Aug 2023 – Present",
+      "projects": [
+        {
+          "name": "Permate",
+          "period": "Aug 2023 – Present",
+          "summary": "Affiliate marketing platform. Web UI/UX (Vue/Nuxt), Flutter app features, API integration, code review, and backend support when the product needs it."
+        },
+        {
+          "name": "Permate Flutter App",
+          "period": "Aug 2023 – Present",
+          "summary": "Contribute Flutter app screens, flows, and API-backed features alongside the web product — shipping mobile UX for affiliate users."
+        }
+      ]
+    },
+    "fpt": {
+      "role": "Developer",
+      "period": "Oct 2021 – Aug 2023",
+      "achievements": [
+        "🏆 Best Performance of BU 2022"
+      ],
+      "projects": [
+        {
+          "name": "VF Framework",
+          "period": "May 2023 – Aug 2023",
+          "summary": "Migrated MyBatis flows to Spring Boot JPA while matching legacy results."
+        },
+        {
+          "name": "Ucube Slim",
+          "period": "Jan 2023 – May 2023",
+          "summary": "Backend controller and screen testing; sub-leader support for task delivery and reporting."
+        },
+        {
+          "name": "Java & Low-code Training",
+          "period": "May 2022 – Jan 2023",
+          "summary": "Built REST APIs with Spring Boot/MyBatis; trained on WebSquare and Nexacro."
+        },
+        {
+          "name": "LGU+ Digital Channel",
+          "period": "Oct 2021 – May 2022",
+          "summary": "Vue/Nuxt digital services UI, shared components, APIs, tests, and stakeholder collaboration."
+        }
+      ]
+    },
+    "ncc": {
+      "role": "Developer / Intern",
+      "period": "Apr 2020 – Sep 2021",
+      "projects": [
+        {
+          "name": "DSH",
+          "period": "Jul 2021 – Sep 2021",
+          "summary": "Blockchain landing pages with React, Next, Gatsby, and Storybook."
+        },
+        {
+          "name": "Survey App",
+          "period": "Mar 2021 – Jul 2021",
+          "summary": "React Native workplace survey and content app from Figma designs."
+        },
+        {
+          "name": "ToiYeuTien",
+          "period": "Oct 2020",
+          "summary": "Mortgage and tax calculator tools in Vue."
+        },
+        {
+          "name": "CRM IMS / Checkpoint / Hivelab",
+          "period": "2020",
+          "summary": "Internal CRM and HR systems — features, UI updates, CRUD flows, and bug fixes in Vue."
+        }
+      ]
+    },
+    "freelance": {
+      "role": "Frontend Developer",
+      "period": "2022 – 2023",
+      "projects": [
+        {
+          "name": "Cinvest",
+          "period": "Jun 2022 – Aug 2022",
+          "summary": "Next.js landing pages and components."
+        },
+        {
+          "name": "OTG",
+          "period": "Apr 2023 – May 2023",
+          "summary": "Responsive UI implementation from design."
+        }
+      ]
+    }
+  },
+  "chat": {
+    "label": "Meet Dat AI",
+    "title": "Meet Dat AI — ask him anything",
+    "lead": "A small interactive corner: ask about experience, skills, and how to reach Dat. Daily question limits keep answers short and fun.",
+    "intro": "Want a quick, light “interview” with Dat? Tap below — first tell me who you are.",
+    "cta": "Meet Dat AI",
+    "banned": "Your chat access was locked for inappropriate language. Please keep things respectful.",
+    "namePrompt": "Before we start, tell me your name.",
+    "anonymousTease": "Hello anonymous! Still want to drop a name — I’ll keep it secret forever.",
+    "nameLabel": "Your name",
+    "namePlaceholder": "Enter your name…",
+    "enterChat": "Start asking Dat",
+    "imAnonymous": "I’m anonymous",
+    "back": "Back",
+    "hello": "Hello, {name}",
+    "quotaLeft": "{remaining} / {limit} questions left today",
+    "quotaDone": "You’ve hit today’s question limit — come back tomorrow.",
+    "quotaBanned": "Chat locked for inappropriate language.",
+    "typing": "Thinking…",
+    "questionLabel": "Question",
+    "send": "Send",
+    "suggestions": [
+      {
+        "id": "q1",
+        "question": "What is Dat’s current role?",
+        "answer": "Dat is a Developer at Permate Global (since August 2023), working on the Permate affiliate marketing platform with Vue, Nuxt, and Flutter — focused on UI/UX, APIs, and team collaboration.",
+        "sort_order": 1
+      },
+      {
+        "id": "q2",
+        "question": "How many years of experience does he have?",
+        "answer": "Dat has 5+ years of experience building modern, responsive web applications, starting from internships at NCCSOFT in 2020 through roles at FPT Software, freelance work, and Permate Global.",
+        "sort_order": 2
+      },
+      {
+        "id": "q3",
+        "question": "What tech stack does he use most?",
+        "answer": "He works primarily with HTML, CSS, JavaScript, TypeScript, Vue.js, React, Nuxt.js, and Next.js. He also has exposure to React Native, Flutter, Spring Boot, and REST APIs.",
+        "sort_order": 3
+      },
+      {
+        "id": "q4",
+        "question": "Where is he based?",
+        "answer": "Dat is based in Hoa Xuan, Cam Le, Da Nang, Vietnam.",
+        "sort_order": 4
+      },
+      {
+        "id": "q5",
+        "question": "How can I contact him?",
+        "answer": "You can reach Dat at nguyenthanhdat1302{'@'}gmail.com, phone 0935 467 108, or Facebook at facebook.com/thanhdat130298.",
+        "sort_order": 5
+      }
+    ],
+    "placeholder": "Ask about Dat… (max 200 chars)",
+    "randomName": "Random",
+    "funnyNames": [
+      "Definitely Not HR",
+      "Anonymous Potato",
+      "Dat’s Twin",
+      "Temp Boss",
+      "Ask-Me-Bot",
+      "Daddy",
+      "Senior Intern"
+    ]
+  },
+  "footer": {
+    "copy": "© {year} {name}"
+  },
+  "personalProjects": {
+    "items": {
+      "my-portfolio": {
+        "name": "My Portfolio",
+        "idea": "A Nuxt portfolio with CV sections, light/dark + EN/VI, and an on-page Meet Dat AI chat grounded on portfolio data."
+      },
+      "interview-qa": {
+        "name": "Interview Q&A",
+        "idea": "Offline-friendly frontend interview question bank (~450 items) for focused practice without needing a live server."
+      },
+      "english-fe": {
+        "name": "English App",
+        "idea": "Frontend for a language/translation learning flow — practice UI with a linked backend API.",
+        "note": "Needs the Backend server running first, so the demo can take a while to start / warm up."
+      },
+      "template-invitation": {
+        "name": "Invitation Template",
+        "idea": "Reusable digital invitation template — mobile-first layout ready to customize for events."
+      }
+    }
+  }
+}

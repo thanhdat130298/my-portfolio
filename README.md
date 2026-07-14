@@ -10,7 +10,9 @@ A Nuxt 4 + Vue 3 + TypeScript landing page that presents CV content and an on-pa
 
 ## What it does
 
-- Showcases hero, featured projects, profile, about, skills, career timeline, and contact
+- Showcases hero, featured work, personal projects, profile, about, skills, career timeline, and contact
 - Lets visitors ask short questions about experience, stack, and how to reach Dat
 - Caps free-form chat (length, daily IP quota) and blocks abuse / spam before calling Gemini
 - Suggested FAQ answers work locally even without a Gemini key
+- Switch language (EN / VI) via `@nuxtjs/i18n`
+- Switch light / dark theme (persisted locally)

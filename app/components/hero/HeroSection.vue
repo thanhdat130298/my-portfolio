@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { portfolio } from '~/data/portfolio'
 import bannerImg from '~/assets/images/banner.png'
+
+const { t } = useI18n()
+const { name, stats } = useLocalizedPortfolio()
 </script>
 
 <template>
@@ -8,20 +10,20 @@ import bannerImg from '~/assets/images/banner.png'
     <div class="container hero-inner">
       <div class="hero-copy hero-animate">
         <p class="eyebrow">
-          <span class="pill">{{ portfolio.role }} · {{ portfolio.location }}</span>
+          <span class="pill">{{ t('hero.role') }} · {{ t('hero.location') }}</span>
         </p>
         <h1>
-          <span class="welcome">Hi, I'm</span>
-          <span class="brand text-gradient">{{ portfolio.name }}</span>
+          <span class="welcome">{{ t('hero.welcome') }}</span>
+          <span class="brand text-gradient">{{ name }}</span>
         </h1>
-        <p class="support">{{ portfolio.summary }}</p>
+        <p class="support">{{ t('hero.summary') }}</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          <a class="btn btn-primary" href="#projects">{{ t('hero.viewProjects') }}</a>
+          <a class="btn btn-ghost" href="#contact">{{ t('ui.contactMe') }}</a>
         </div>
-        <div class="hero-stats" aria-label="Highlights">
+        <div class="hero-stats" :aria-label="t('hero.highlights')">
           <div
-            v-for="(stat, index) in portfolio.stats"
+            v-for="(stat, index) in stats"
             :key="stat.label"
             class="stat"
             :data-i="index"
@@ -38,14 +40,14 @@ import bannerImg from '~/assets/images/banner.png'
           <img
             class="banner"
             :src="bannerImg"
-            :alt="`${portfolio.name} — portfolio banner`"
+            :alt="t('hero.bannerAlt', { name })"
             width="600"
             height="800"
           >
         </div>
         <div class="float-card" aria-hidden="true">
-          <p class="float-value">{{ portfolio.stats[2]?.value }}</p>
-          <p class="float-label">Years building web apps</p>
+          <p class="float-value">{{ stats[2]?.value }}</p>
+          <p class="float-label">{{ t('hero.floatLabel') }}</p>
         </div>
       </div>
     </div>
@@ -84,7 +86,7 @@ import bannerImg from '~/assets/images/banner.png'
   padding: 0.5rem 1rem;
   border-radius: 999px;
   background: var(--color-accent-soft);
-  color: #c2410c;
+  color: var(--color-accent-deep);
   font-size: 0.875rem;
   font-weight: 700;
 }
@@ -173,7 +175,7 @@ h1 {
   border-radius: 1.5rem;
   overflow: hidden;
   background: linear-gradient(135deg, #fb923c, #9333ea);
-  box-shadow: 0 25px 50px rgba(24, 24, 27, 0.18);
+  box-shadow: var(--shadow-soft);
 }
 
 .banner {
@@ -192,8 +194,8 @@ h1 {
   gap: 0.1rem;
   padding: 1rem 1.15rem;
   border-radius: 1rem;
-  background: #fff;
-  box-shadow: 0 18px 40px rgba(24, 24, 27, 0.14);
+  background: var(--color-surface-elevated);
+  box-shadow: var(--shadow-soft);
   animation: float 3.2s ease-in-out infinite;
 }
 

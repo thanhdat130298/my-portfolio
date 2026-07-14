@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { portfolio } from '~/data/portfolio'
+const { t } = useI18n()
+const { projects } = useLocalizedPortfolio()
 </script>
 
 <template>
@@ -7,16 +8,16 @@ import { portfolio } from '~/data/portfolio'
     <div class="container">
       <RevealOnScroll>
         <SectionHeading
-          label="Featured work"
-          title="Projects that shaped the craft"
-          lead="Selected product, channel, landing, and backend work — frontend-led delivery with fullstack exposure."
+          :label="t('sections.projects.label')"
+          :title="t('sections.projects.title')"
+          :lead="t('sections.projects.lead')"
         />
       </RevealOnScroll>
 
       <RevealOnScroll>
         <div class="grid">
           <ProjectCard
-            v-for="project in portfolio.projects"
+            v-for="project in projects"
             :key="project.id"
             :project="project"
           />

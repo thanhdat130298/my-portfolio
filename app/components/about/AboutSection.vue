@@ -1,26 +1,33 @@
 <script setup lang="ts">
-import { portfolio } from '~/data/portfolio'
+const { t } = useI18n()
+const { aboutPoints } = useLocalizedPortfolio()
 </script>
 
 <template>
   <section id="about" class="section about">
     <div class="container">
       <RevealOnScroll>
-        <SectionHeading
-          label="About"
-          title="Frontend first, fullstack direction"
-          :lead="portfolio.about.intro"
-        />
-      </RevealOnScroll>
+        <div class="frame">
+          <SectionHeading
+            :label="t('sections.about.label')"
+            :title="t('sections.about.title')"
+            :lead="t('sections.about.intro')"
+          />
 
-      <RevealOnScroll>
-        <div class="grid">
-          <article v-for="point in portfolio.about.points" :key="point.title" class="point">
-            <h3>{{ point.title }}</h3>
-            <p>{{ point.text }}</p>
-          </article>
+          <div class="grid">
+            <article
+              v-for="(point, index) in aboutPoints"
+              :key="point.title"
+              class="point"
+            >
+              <span class="index" aria-hidden="true">{{ String(index + 1).padStart(2, '0') }}</span>
+              <h3>{{ point.title }}</h3>
+              <p>{{ point.text }}</p>
+            </article>
+          </div>
+
+          <p class="looking">{{ t('sections.about.lookingFor') }}</p>
         </div>
-        <p class="looking">{{ portfolio.lookingFor }}</p>
       </RevealOnScroll>
     </div>
   </section>
@@ -28,32 +35,64 @@ import { portfolio } from '~/data/portfolio'
 
 <style scoped>
 .about {
-  background: linear-gradient(180deg, transparent, rgba(255, 237, 213, 0.45), transparent);
+  position: relative;
+}
+
+.frame {
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  border: 1px solid var(--color-accent-border);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(145deg, var(--color-accent-soft), transparent 42%),
+    var(--color-surface-elevated);
+  box-shadow: var(--shadow-soft);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.75rem;
+  gap: 1rem;
+}
+
+.point {
+  display: grid;
+  gap: 0.45rem;
+  align-content: start;
+  padding: 1.1rem 1rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--color-surface) 55%, var(--color-surface-elevated));
+}
+
+.index {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
 }
 
 .point h3 {
-  margin: 0 0 0.5rem;
+  margin: 0;
   font-family: var(--font-display);
-  font-size: 1.15rem;
-  color: var(--color-accent);
+  font-size: 1.2rem;
+  color: var(--color-ink);
 }
 
 .point p {
   margin: 0;
   color: var(--color-ink-soft);
+  line-height: 1.6;
 }
 
 .looking {
-  margin: 2rem 0 0;
-  max-width: 44rem;
-  color: var(--color-muted);
-  font-style: italic;
+  margin: 1.35rem 0 0;
+  padding: 1rem 1.15rem;
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+  font-weight: 600;
+  line-height: 1.55;
 }
 
 @media (max-width: 800px) {

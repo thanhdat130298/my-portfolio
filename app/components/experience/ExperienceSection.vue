@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { portfolio } from '~/data/portfolio'
+const { t } = useI18n()
+const { experience } = useLocalizedPortfolio()
 </script>
 
 <template>
@@ -7,18 +8,19 @@ import { portfolio } from '~/data/portfolio'
     <div class="container">
       <RevealOnScroll>
         <SectionHeading
-          label="Career notes"
-          title="Places and projects along the way"
-          lead="Instead of fake testimonials — real teams and products from the CV timeline."
+          :label="t('sections.career.label')"
+          :title="t('sections.career.title')"
+          :lead="t('sections.career.lead')"
         />
       </RevealOnScroll>
 
       <RevealOnScroll>
         <div class="timeline">
           <ExperienceItem
-            v-for="item in portfolio.experience"
+            v-for="(item, index) in experience"
             :key="item.id"
             :item="item"
+            :default-open="index === 0"
           />
         </div>
       </RevealOnScroll>

@@ -38,6 +38,18 @@ export interface ExperienceItem {
   }[]
 }
 
+export interface PersonalProject {
+  id: string
+  name: string
+  /** Live demo URL (optional). */
+  demoUrl?: string
+  githubUrl: string
+  stack: string[]
+  /** When true, show localized note from i18n `personalProjects.items.{id}.note`. */
+  hasNote?: boolean
+}
+
+
 export interface ContactInfo {
   email: string
   phone: string
@@ -51,13 +63,13 @@ export interface ContactInfo {
 
 export const portfolio = {
   brand: 'DAT NGUYEN',
-  name: 'Nguyen Thanh Dat',
+  name: 'Nguyễn Thành Đạt',
   role: 'Web Developer · Frontend → Fullstack',
   location: 'Da Nang, Vietnam',
 
   headline: 'Frontend-first developer, growing into fullstack',
   summary:
-    'Primarily a frontend developer with 5+ years building UIs in Vue, React, Nuxt, and Next — strong on UI/UX, components, and responsive product screens. Also hands-on with Java/Spring Boot, Django, and APIs from real projects, with a clear path toward fullstack delivery.',
+    'Primarily a frontend developer with 5+ years building UIs in Vue, React, Nuxt, and Next — strong on UI/UX, components, and responsive product screens. Also hands-on with Java/Spring Boot and APIs from real projects, with a clear path toward fullstack delivery.',
 
   lookingFor:
     'Open to frontend-heavy roles with room to grow as a fullstack developer — modern teams, solid product craft, and AI-assisted workflows.',
@@ -80,7 +92,7 @@ export const portfolio = {
   profile: {
     badge: 'Frontend first · Fullstack-bound · Da Nang',
     caption:
-      'Nguyen Thanh Dat — frontend-focused web developer (Vue / React / Nuxt / Next), expanding toward fullstack with Spring Boot, Django, and API work.',
+      'Nguyen Thanh Dat — frontend-focused web developer (Vue / React / Nuxt / Next), expanding toward fullstack with Spring Boot and API work.',
   },
 
   about: {
@@ -98,7 +110,7 @@ export const portfolio = {
       },
       {
         title: 'Approach',
-        text: 'Frontend-first by default; jump into Java/Spring Boot, Django, or mobile when the product needs full-feature ownership across the stack.',
+        text: 'Frontend-first by default; jump into Java/Spring Boot or mobile when the product needs full-feature ownership across the stack.',
       },
     ],
   },
@@ -131,7 +143,6 @@ export const portfolio = {
       'Java',
       'Spring Boot',
       'Python',
-      'Django',
       'Node.js',
       'RESTful API',
       'SQL',
@@ -150,7 +161,7 @@ export const portfolio = {
     },
     {
       title: 'Backend exposure',
-      items: ['Java', 'Spring Boot', 'Python', 'Django', 'Node.js', 'RESTful API', 'SQL'],
+      items: ['Java', 'Spring Boot', 'Python', 'Node.js', 'RESTful API', 'SQL'],
     },
     {
       title: 'Tools',
@@ -166,7 +177,7 @@ export const portfolio = {
       company: 'Permate Global',
       description:
         'Affiliate marketing platform — main ownership on web UI/UX from designs and client flows, plus API wiring, code review, backend support when needed, and Flutter app features for the mobile product on a 20-person team.',
-      stack: ['Vue 2', 'Nuxt.js', 'Python Django', 'Flutter'],
+      stack: ['Vue 2', 'Nuxt.js', 'Flutter'],
       highlights: [
         'Web UI/UX (Vue / Nuxt)',
         'Flutter app screens & flows',
@@ -266,7 +277,7 @@ export const portfolio = {
           period: 'Aug 2023 – Present',
           summary:
             'Affiliate marketing platform. Web UI/UX (Vue/Nuxt), Flutter app features, API integration, code review, and backend support when the product needs it.',
-          stack: ['Vue 2', 'Nuxt.js', 'Django', 'Flutter'],
+            stack: ['Vue 2', 'Nuxt.js', 'Flutter'],
         },
         {
           name: 'Permate Flutter App',
@@ -365,6 +376,38 @@ export const portfolio = {
     },
   ] as ExperienceItem[],
 
+  personalProjects: [
+    {
+      id: 'my-portfolio',
+      name: 'My Portfolio',
+      demoUrl: 'https://my-portfolio-drab-phi-hko31oj1lt.vercel.app/',
+      githubUrl: 'https://github.com/thanhdat130298/my-portfolio',
+      stack: ['Nuxt 4', 'Vue 3', 'TypeScript', 'CSS'],
+    },
+    {
+      id: 'interview-qa',
+      name: 'Interview Q&A',
+      demoUrl: 'https://thanhdat130298.github.io/interview-qa/',
+      githubUrl: 'https://github.com/thanhdat130298/interview-qa',
+      stack: ['HTML', 'CSS', 'JavaScript'],
+    },
+    {
+      id: 'english-fe',
+      name: 'English App',
+      demoUrl: 'https://english-fe-phi.vercel.app',
+      githubUrl: 'https://github.com/thanhdat130298/english-fe',
+      stack: ['TypeScript', 'Vue', 'CSS', 'REST API'],
+      hasNote: true,
+    },
+    {
+      id: 'template-invitation',
+      name: 'Invitation Template',
+      demoUrl: 'https://invitation-beta.web.app/',
+      githubUrl: 'https://github.com/thanhdat130298/template-invitation',
+      stack: ['Vue', 'TypeScript', 'HTML', 'CSS'],
+    },
+  ] as PersonalProject[],
+
   contact: {
     email: 'nguyenthanhdat1302@gmail.com',
     phone: '+84935467108',
@@ -377,7 +420,7 @@ export const portfolio = {
 
   languages: [
     { name: 'Vietnamese', level: 'Native' },
-    { name: 'English', level: 'B1 (IELTS 5.5) — reading & basic communication' },
+    { name: 'English', level: 'B1 — reading & basic communication' },
   ],
 
   interests: ['Football', 'Gaming', 'Traveling', 'Learning and building new things'],
@@ -389,7 +432,7 @@ export function buildKnowledgeBase(): string {
   return `
 Name: ${p.name}
 Role: ${p.role}
-Positioning: Primarily a frontend developer (Vue/React/Nuxt/Next, UI/UX). Orientation: growing into fullstack (Java/Spring Boot, Django, APIs) while keeping frontend as the core strength.
+Positioning: Primarily a frontend developer (Vue/React/Nuxt/Next, UI/UX). Orientation: growing into fullstack (Java/Spring Boot, APIs) while keeping frontend as the core strength. Familiar with Python/Django only at a light level — do not oversell Django.
 Location: ${p.location} (${p.contact.address})
 Summary: ${p.summary}
 Looking for: ${p.lookingFor}
@@ -432,6 +475,16 @@ ${p.projects
   .map(
     pr =>
       `- ${pr.name} @ ${pr.company} (${pr.period}): ${pr.description} Stack: ${pr.stack.join(', ')}.`,
+  )
+  .join('\n')}
+
+Personal projects:
+${p.personalProjects
+  .map(
+    pr =>
+      `- ${pr.name}` +
+      (pr.demoUrl ? ` | demo: ${pr.demoUrl}` : '') +
+      ` | github: ${pr.githubUrl} | stack: ${pr.stack.join(', ')}`,
   )
   .join('\n')}
 

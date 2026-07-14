@@ -29,6 +29,7 @@ function uid() {
 }
 
 export function useChat() {
+  const { tm, rt, locale } = useI18n()
   const step = ref<ChatStep>('intro')
   const loading = ref(false)
   const quotaLoading = ref(false)
@@ -46,6 +47,31 @@ export function useChat() {
   const limited = computed(() => chatLocked.value || quota.value?.limited === true)
   const banned = computed(() => chatLocked.value || quota.value?.banned === true)
   const canAsk = computed(() => !limited.value && !banned.value && !loading.value)
+
+  function syncSuggestionsFromLocale() {
+    const fromLocale = tm('chat.suggestions')
+    if (!Array.isArray(fromLocale) || !fromLocale.length) {
+      suggestions.value = [...localSuggestions]
+      return
+    }
+
+    suggestions.value = fromLocale.map((raw, index) => {
+      const row = (raw && typeof raw === 'object' ? raw : {}) as Record<string, unknown>
+      const fallback = localSuggestions[index]
+      return {
+        id: typeof row.id === 'string' ? row.id : (fallback?.id ?? `q${index + 1}`),
+        question: resolveLocaleValue(row.question, rt, fallback?.question ?? ''),
+        answer: resolveLocaleValue(row.answer, rt, fallback?.answer ?? ''),
+        sort_order: typeof row.sort_order === 'number'
+          ? row.sort_order
+          : (fallback?.sort_order ?? index + 1),
+      }
+    })
+  }
+
+  watch(locale, () => {
+    syncSuggestionsFromLocale()
+  }, { immediate: true })
 
   function lockChatLocally(reason = 'abuse') {
     chatLocked.value = true
@@ -77,13 +103,7 @@ export function useChat() {
   }
 
   async function loadSuggestions() {
-    try {
-      const data = await $fetch<SuggestedQuestion[]>('/api/suggested-questions')
-      if (data?.length) suggestions.value = data
-    }
-    catch {
-      suggestions.value = [...localSuggestions]
-    }
+    syncSuggestionsFromLocale()
   }
 
   async function refreshQuota() {
@@ -364,5 +384,16 @@ export function useChat() {
     refreshQuota,
     loadSuggestions,
     resetToIntro,
+  }
+}
+
+function resolveLocaleValue(value: unknown, resolve: (message: unknown) => string, fallback: string) {
+  if (typeof value === 'string') return value
+  if (value == null) return fallback
+  try {
+    return resolve(value) || fallback
+  }
+  catch {
+    return fallback
   }
 }

@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { portfolio } from '~/data/portfolio'
-
-const { contact } = portfolio
+const { t } = useI18n()
+const { contact } = useLocalizedPortfolio()
 </script>
 
 <template>
@@ -9,9 +8,9 @@ const { contact } = portfolio
     <div class="container">
       <RevealOnScroll>
         <SectionHeading
-          label="Visit / reach out"
-          title="Let’s talk about the next build"
-          lead="Open to frontend-heavy roles with a fullstack growth path. Prefer email for opportunities."
+          :label="t('sections.contact.label')"
+          :title="t('sections.contact.title')"
+          :lead="t('sections.contact.lead')"
         />
       </RevealOnScroll>
 
@@ -19,19 +18,19 @@ const { contact } = portfolio
         <div class="panel">
           <div class="info">
             <div>
-              <h3>Email</h3>
+              <h3>{{ t('sections.contact.email') }}</h3>
               <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
             </div>
             <div>
-              <h3>Phone</h3>
+              <h3>{{ t('sections.contact.phone') }}</h3>
               <a :href="`tel:${contact.phone}`">{{ contact.phoneDisplay }}</a>
             </div>
             <div>
-              <h3>Address</h3>
-              <p>{{ contact.address }}</p>
+              <h3>{{ t('sections.contact.address') }}</h3>
+              <p>{{ t('sections.contact.addressValue') }}</p>
             </div>
             <div>
-              <h3>Facebook</h3>
+              <h3>{{ t('sections.contact.facebook') }}</h3>
               <a :href="contact.facebookUrl" target="_blank" rel="noopener noreferrer">
                 {{ contact.facebook }}
               </a>
@@ -39,18 +38,9 @@ const { contact } = portfolio
           </div>
 
           <div class="cta">
-            <a class="btn btn-primary" :href="`mailto:${contact.email}`">Send an email</a>
+            <a class="btn btn-primary" :href="`mailto:${contact.email}`">{{ t('sections.contact.sendEmail') }}</a>
             <a class="btn btn-ghost" :href="contact.facebookUrl" target="_blank" rel="noopener noreferrer">
-              Open Facebook
-            </a>
-            <a
-              v-if="contact.demoUrl"
-              class="btn btn-ghost"
-              :href="contact.demoUrl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live demo
+              {{ t('sections.contact.openFacebook') }}
             </a>
           </div>
         </div>
@@ -61,7 +51,7 @@ const { contact } = portfolio
 
 <style scoped>
 .contact {
-  padding-bottom: clamp(5rem, 12vw, 7rem);
+  padding-bottom: clamp(5rem, 12vw, 4rem);
 }
 
 .panel {

@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { portfolio } from '~/data/portfolio'
-
+const { t } = useI18n()
+const { brand, name } = useLocalizedPortfolio()
 const year = new Date().getFullYear()
 </script>
 
 <template>
   <footer class="footer">
     <div class="container footer-inner">
-      <p class="brand">{{ portfolio.brand }}</p>
-      <p class="copy">© {{ year }} {{ portfolio.name }}</p>
+      <p class="brand">{{ brand }}</p>
+      <p class="copy">{{ t('footer.copy', { year, name }) }}</p>
     </div>
   </footer>
 </template>

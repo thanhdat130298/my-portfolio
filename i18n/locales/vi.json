@@ -1,0 +1,352 @@
+{
+  "meta": {
+    "title": "Dat Nguyen — Web Developer",
+    "description": "Nguyễn Thành Đạt — Web Developer với 5+ năm kinh nghiệm Vue, React, Nuxt và Next. Sống tại Đà Nẵng, Việt Nam."
+  },
+  "ui": {
+    "contactMe": "Liên hệ",
+    "toggleNav": "Mở/đóng menu",
+    "toggleTheme": "Đổi giao diện sáng/tối",
+    "themeLight": "Sáng",
+    "themeDark": "Tối",
+    "langEn": "EN",
+    "langVi": "VI",
+    "switchLanguage": "Đổi ngôn ngữ",
+    "demo": "Xem demo",
+    "github": "GitHub",
+    "stack": "Công nghệ",
+    "idea": "Ý tưởng chính",
+    "scrollToChat": "Meet Dat AI",
+    "scrollToTop": "Về đầu trang"
+  },
+  "nav": {
+    "projects": "Dự án",
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "career": "Sự nghiệp",
+    "meetDat": "Meet Dat",
+    "contact": "Liên hệ",
+    "personal": "Personal Projects"
+  },
+  "hero": {
+    "welcome": "Xin chào, mình là",
+    "viewProjects": "Xem dự án",
+    "highlights": "Điểm nổi bật",
+    "floatLabel": "Năm xây dựng web app",
+    "bannerAlt": "{name} — ảnh banner portfolio",
+    "role": "Web Developer · Frontend → Fullstack",
+    "location": "Đà Nẵng, Việt Nam",
+    "summary": "Chủ yếu làm frontend với 5+ năm xây UI trên Vue, React, Nuxt và Next — mạnh về UI/UX, component và màn hình responsive. Cũng đã làm Java/Spring Boot và API trên dự án thật, đang hướng tới fullstack.",
+    "stats": {
+      "projects": "Dự án đã bàn giao",
+      "companies": "Công ty & freelance",
+      "years": "Năm kinh nghiệm"
+    }
+  },
+  "sections": {
+    "projects": {
+      "label": "Sản phẩm nổi bật",
+      "title": "Những dự án đã định hình tay nghề",
+      "lead": "Sản phẩm, kênh số, landing và backend — giao hàng theo hướng frontend-led, có chạm fullstack."
+    },
+    "profile": {
+      "badge": "Frontend first · Hướng fullstack · Đà Nẵng",
+      "caption": "Nguyễn Thành Đạt — web developer thiên frontend (Vue / React / Nuxt / Next), mở rộng fullstack với Spring Boot và API.",
+      "education": "Học vấn: Sư phạm Tin học — Đại học Đà Nẵng, Đại học Sư phạm.",
+      "title": "Tay nghề frontend, tham vọng fullstack"
+    },
+    "about": {
+      "label": "Giới thiệu",
+      "title": "Frontend là gốc, fullstack là hướng đi",
+      "intro": "Từ 2020 mình chủ yếu ship frontend — từ thiết kế tới UI production, component và luồng client — đồng thời nhận việc backend trên sản phẩm thật. Frontend là thế mạnh cốt lõi; fullstack là hướng phát triển.",
+      "lookingFor": "Mở cho các vị trí thiên frontend, có không gian lớn lên fullstack — team hiện đại, sản phẩm chỉn chu, workflow hỗ trợ AI.",
+      "points": {
+        "objective": {
+          "title": "Mục tiêu",
+          "text": "Tiếp tục ship trải nghiệm frontend tốt, đồng thời sâu hơn backend để tự tin làm việc như fullstack."
+        },
+        "mission": {
+          "title": "Sứ mệnh",
+          "text": "Biến design thành giao diện nhanh, dễ dùng — component sạch, UX vững, đủ fluency API/backend để ôm feature end-to-end khi cần."
+        },
+        "approach": {
+          "title": "Cách làm",
+          "text": "Ưu tiên frontend; nhảy vào Java/Spring Boot hoặc mobile khi sản phẩm cần sở hữu feature xuyên stack."
+        }
+      }
+    },
+    "skills": {
+      "label": "Tech stack",
+      "title": "Frontend trước — fullstack đang mở rộng",
+      "lead": "Thế mạnh cốt lõi ở UI; backend từ công việc thật tại FPT/Permate là đường tới fullstack.",
+      "primary": "Chính",
+      "also": "Đã tiếp xúc",
+      "frontendTitle": "Frontend",
+      "frontendLead": "Tay nghề chính — hệ UI, layout responsive và màn hình sản phẩm.",
+      "backendTitle": "Backend",
+      "backendLead": "Đường fullstack — API và service từ FPT/Permate và dự án thực tế.",
+      "workingStyle": "Phong cách làm việc",
+      "languages": "Ngôn ngữ",
+      "softSkills": "Làm việc nhóm · Tỉ mỉ · Học nhanh · Bám deadline · Chịu trách nhiệm · Giao tiếp rõ",
+      "langVi": "Tiếng Việt",
+      "langViLevel": "Bản ngữ",
+      "langEn": "Tiếng Anh",
+      "langEnLevel": "B1 — đọc & giao tiếp cơ bản"
+    },
+    "career": {
+      "label": "Hành trình",
+      "title": "Những nơi và dự án đã đi qua",
+      "lead": "Không testimonials giả — team và sản phẩm thật trên timeline CV."
+    },
+    "contact": {
+      "label": "Ghé thăm / liên hệ",
+      "title": "Cùng nói về sản phẩm tiếp theo",
+      "lead": "Mở cho vai trò thiên frontend với lộ trình fullstack. Ưu tiên email cho cơ hội công việc.",
+      "email": "Email",
+      "phone": "Điện thoại",
+      "address": "Địa chỉ",
+      "facebook": "Facebook",
+      "sendEmail": "Gửi email",
+      "openFacebook": "Mở Facebook",
+      "liveDemo": "Xem demo",
+      "addressValue": "Hòa Xuân, Cẩm Lệ, Đà Nẵng"
+    },
+    "personal": {
+      "label": "Side builds",
+      "title": "Personal projects",
+      "lead": "Các sản phẩm / thử nghiệm cá nhân — ý tưởng chính, stack, demo và link GitHub."
+    }
+  },
+  "projects": {
+    "permate": {
+      "period": "Th8 2023 – Hiện tại",
+      "description": "Nền tảng affiliate marketing — chủ yếu sở hữu web UI/UX từ design và luồng client, nối API, review code, hỗ trợ backend khi cần, và làm feature Flutter cho app mobile trong team ~20 người.",
+      "highlights": [
+        "Web UI/UX (Vue / Nuxt)",
+        "Màn hình & luồng Flutter",
+        "Tích hợp API & review code"
+      ]
+    },
+    "lgu": {
+      "period": "Th10 2021 – Th5 2022",
+      "description": "Kênh dịch vụ số cho end user. Xây component chung, màn hình từ library, tích hợp API, unit test, phối hợp BA/BrSE/client trong team 11 người.",
+      "highlights": [
+        "Thư viện component chung",
+        "Tích hợp màn hình & API",
+        "Unit test từng màn"
+      ]
+    },
+    "dsh": {
+      "period": "Th7 2021 – Th9 2021",
+      "description": "Landing marketing cho sản phẩm blockchain — trang, component, logic nghiệp vụ và responsive đầy đủ với tooling design system.",
+      "highlights": [
+        "Landing responsive",
+        "UI theo component",
+        "Workflow Storybook"
+      ]
+    },
+    "cinvest": {
+      "period": "Th6 2022 – Th8 2022",
+      "description": "Landing và triển khai page/component với React, Next.js trong team 4 người.",
+      "highlights": [
+        "Landing page",
+        "Component tái sử dụng"
+      ]
+    },
+    "vf-framework": {
+      "period": "Th5 2023 – Th8 2023",
+      "description": "Migrate luồng MyBatis legacy sang Spring Boot JPA, giữ kết quả khớp hệ cũ — API và persistence trên track hiện đại hóa Java backend.",
+      "highlights": [
+        "MyBatis → Spring Boot JPA",
+        "Kết quả tương thích legacy",
+        "Hỗ trợ REST / service layer"
+      ]
+    },
+    "survey": {
+      "period": "Th3 2021 – Th7 2021",
+      "description": "App React Native khảo sát công nhân nhà máy, đánh giá sức khỏe, blog và Q&A — UI từ Figma, phối backend và fix bug.",
+      "highlights": [
+        "Figma → UI mobile",
+        "Logic & luồng app"
+      ]
+    }
+  },
+  "experience": {
+    "permate": {
+      "role": "Developer",
+      "period": "Th8 2023 – Hiện tại",
+      "projects": [
+        {
+          "name": "Permate",
+          "period": "Th8 2023 – Hiện tại",
+          "summary": "Nền tảng affiliate. Web UI/UX (Vue/Nuxt), feature Flutter, tích hợp API, review code và hỗ trợ backend khi sản phẩm cần."
+        },
+        {
+          "name": "Permate Flutter App",
+          "period": "Th8 2023 – Hiện tại",
+          "summary": "Đóng góp màn hình Flutter, luồng và feature gắn API bên cạnh web product — ship UX mobile cho user affiliate."
+        }
+      ]
+    },
+    "fpt": {
+      "role": "Developer",
+      "period": "Th10 2021 – Th8 2023",
+      "achievements": [
+        "🏆 Best Performance of BU 2022"
+      ],
+      "projects": [
+        {
+          "name": "VF Framework",
+          "period": "Th5 2023 – Th8 2023",
+          "summary": "Migrate MyBatis sang Spring Boot JPA, giữ kết quả khớp legacy."
+        },
+        {
+          "name": "Ucube Slim",
+          "period": "Th1 2023 – Th5 2023",
+          "summary": "Test controller/backend và màn hình; hỗ trợ sub-leader giao việc và báo cáo."
+        },
+        {
+          "name": "Java & Low-code Training",
+          "period": "Th5 2022 – Th1 2023",
+          "summary": "Xây REST API Spring Boot/MyBatis; đào tạo WebSquare và Nexacro."
+        },
+        {
+          "name": "LGU+ Digital Channel",
+          "period": "Th10 2021 – Th5 2022",
+          "summary": "UI dịch vụ số Vue/Nuxt, component chung, API, test và phối stakeholder."
+        }
+      ]
+    },
+    "ncc": {
+      "role": "Developer / Intern",
+      "period": "Th4 2020 – Th9 2021",
+      "projects": [
+        {
+          "name": "DSH",
+          "period": "Th7 2021 – Th9 2021",
+          "summary": "Landing blockchain với React, Next, Gatsby và Storybook."
+        },
+        {
+          "name": "Survey App",
+          "period": "Th3 2021 – Th7 2021",
+          "summary": "App khảo sát nơi làm việc React Native từ design Figma."
+        },
+        {
+          "name": "ToiYeuTien",
+          "period": "Th10 2020",
+          "summary": "Công cụ tính vay mua nhà và thuế bằng Vue."
+        },
+        {
+          "name": "CRM IMS / Checkpoint / Hivelab",
+          "period": "2020",
+          "summary": "CRM và HR nội bộ — feature, cập nhật UI, CRUD và fix bug trên Vue."
+        }
+      ]
+    },
+    "freelance": {
+      "role": "Frontend Developer",
+      "period": "2022 – 2023",
+      "projects": [
+        {
+          "name": "Cinvest",
+          "period": "Th6 2022 – Th8 2022",
+          "summary": "Landing và component Next.js."
+        },
+        {
+          "name": "OTG",
+          "period": "Th4 2023 – Th5 2023",
+          "summary": "Triển khai UI responsive từ design."
+        }
+      ]
+    }
+  },
+  "chat": {
+    "label": "Meet Dat AI",
+    "title": "Đạt là AI — thử tìm hiểu anh ấy",
+    "lead": "Một góc tương tác nhỏ: hỏi về kinh nghiệm, skill và cách liên hệ. Có giới hạn câu hỏi mỗi ngày để giữ vibe vui và gọn.",
+    "intro": "Muốn “phỏng vấn” Đạt theo kiểu nhanh và hài hước? Bấm bên dưới — trước hết cho mình biết bạn là ai.",
+    "cta": "Đạt là AI, thử tìm hiểu anh ấy",
+    "banned": "Tài khoản chat của bạn đã bị khóa vì ngôn từ không phù hợp. Hãy giữ thái độ lịch sự.",
+    "namePrompt": "Trước khi tìm hiểu, hãy cho mình biết tên của bạn nhé.",
+    "anonymousTease": "Chào người ẩn danh! Hãy bật mí tên của bạn — mình sẽ giấu suốt đời.",
+    "nameLabel": "Tên của bạn",
+    "namePlaceholder": "Nhập tên của bạn…",
+    "enterChat": "Vào hỏi Đạt",
+    "imAnonymous": "Tôi là người ẩn danh",
+    "back": "Quay lại",
+    "hello": "Xin chào, {name}",
+    "quotaLeft": "Còn {remaining} / {limit} câu hỏi hôm nay",
+    "quotaDone": "Bạn đã đạt giới hạn câu hỏi, hãy quay lại vào ngày mai.",
+    "quotaBanned": "Chat đã bị khóa vì ngôn từ không phù hợp.",
+    "typing": "Đang nghĩ…",
+    "questionLabel": "Câu hỏi",
+    "send": "Gửi",
+    "suggestions": [
+      {
+        "id": "q1",
+        "question": "Đạt đang làm gì hiện tại?",
+        "answer": "Đạt đang là Developer tại Permate Global (từ tháng 8/2023), làm nền tảng affiliate Permate với Vue, Nuxt và Flutter — tập trung UI/UX, API và phối hợp team.",
+        "sort_order": 1
+      },
+      {
+        "id": "q2",
+        "question": "Anh ấy có bao nhiêu năm kinh nghiệm?",
+        "answer": "Đạt có 5+ năm xây web app hiện đại, responsive — từ thực tập NCCSOFT (2020) qua FPT Software, freelance tới Permate Global.",
+        "sort_order": 2
+      },
+      {
+        "id": "q3",
+        "question": "Tech stack anh ấy dùng nhiều nhất?",
+        "answer": "Chủ yếu HTML, CSS, JavaScript, TypeScript, Vue.js, React, Nuxt.js và Next.js. Cũng có React Native, Flutter, Spring Boot và REST API.",
+        "sort_order": 3
+      },
+      {
+        "id": "q4",
+        "question": "Anh ấy ở đâu?",
+        "answer": "Đạt ở Hòa Xuân, Cẩm Lệ, Đà Nẵng, Việt Nam.",
+        "sort_order": 4
+      },
+      {
+        "id": "q5",
+        "question": "Liên hệ Đạt thế nào?",
+        "answer": "Email nguyenthanhdat1302{'@'}gmail.com, điện thoại 0935 467 108, hoặc Facebook facebook.com/thanhdat130298.",
+        "sort_order": 5
+      }
+    ],
+    "placeholder": "Hỏi về Đạt… (tối đa 200 ký tự)",
+    "randomName": "Random",
+    "funnyNames": [
+      "Đạt Fake",
+      "Người lạ 007",
+      "Sếp tạm thời",
+      "Khách VIP ảo",
+      "AI hỏi AI",
+      "Bố đường",
+      "Intern Senior"
+    ]
+  },
+  "footer": {
+    "copy": "© {year} {name}"
+  },
+  "personalProjects": {
+    "items": {
+      "my-portfolio": {
+        "name": "My Portfolio",
+        "idea": "Portfolio Nuxt với các section CV, light/dark + EN/VI, và chat Meet Dat AI gắn theo dữ liệu portfolio."
+      },
+      "interview-qa": {
+        "name": "Interview Q&A",
+        "idea": "Ngân hàng câu hỏi phỏng vấn frontend (~450 câu), dùng offline để ôn mà không cần server."
+      },
+      "english-fe": {
+        "name": "English App",
+        "idea": "Frontend cho app học/dịch tiếng Anh — UI luyện tập kết nối API backend.",
+        "note": "Cần start server Backend trước, nên demo khởi động / warm-up sẽ hơi chậm."
+      },
+      "template-invitation": {
+        "name": "Invitation Template",
+        "idea": "Template thiệp mời số tái sử dụng — layout ưu tiên mobile, dễ customize theo sự kiện."
+      }
+    }
+  }
+}

@@ -2,20 +2,37 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: [],
+  modules: ['@nuxtjs/i18n'],
 
   components: [
     {
       path: '~/components',
       pathPrefix: false,
+      extensions: ['vue'],
     },
   ],
 
   css: ['~/assets/css/main.css'],
 
+  i18n: {
+    locales: [
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
+      { code: 'vi', language: 'vi-VN', name: 'Tiếng Việt', file: 'vi.json' },
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'locales',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'portfolio_lang',
+      fallbackLocale: 'en',
+    },
+  },
+
   app: {
     head: {
-      htmlAttrs: { lang: 'en' },
+      htmlAttrs: { lang: 'en', 'data-theme': 'light' },
       title: 'Dat Nguyen — Web Developer',
       meta: [
         {

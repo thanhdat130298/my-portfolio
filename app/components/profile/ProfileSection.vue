@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { portfolio } from '~/data/portfolio'
 import avatarImg from '~/assets/images/avt.png'
+
+const { t } = useI18n()
+const { name } = useLocalizedPortfolio()
 </script>
 
 <template>
@@ -12,18 +14,16 @@ import avatarImg from '~/assets/images/avt.png'
             <img
               class="avatar"
               :src="avatarImg"
-              :alt="portfolio.name"
+              :alt="name"
               width="320"
               height="320"
             >
           </div>
           <div class="copy">
-            <p class="badge">{{ portfolio.profile.badge }}</p>
-            <h2 class="section-title">Frontend craft, fullstack ambition</h2>
-            <p class="lead">{{ portfolio.profile.caption }}</p>
-            <p class="edu">
-              Education: Informatics Teacher Education — The University of Danang, University of Education.
-            </p>
+            <p class="badge">{{ t('sections.profile.badge') }}</p>
+            <h2 class="section-title">{{ t('sections.profile.title') }}</h2>
+            <p class="lead">{{ t('sections.profile.caption') }}</p>
+            <p class="edu">{{ t('sections.profile.education') }}</p>
           </div>
         </div>
       </RevealOnScroll>
@@ -45,7 +45,7 @@ import avatarImg from '~/assets/images/avt.png'
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
   background:
-    linear-gradient(135deg, rgba(255, 237, 213, 0.75), rgba(250, 245, 255, 0.95));
+    linear-gradient(135deg, var(--color-accent-soft), var(--color-purple-soft));
 }
 
 .portrait {
