@@ -1,12 +1,9 @@
 import { getClientIp } from '../utils/requestIp'
-import { assertAllowedOrigin } from '../utils/originAllowlist'
 import { banIp, isIpBanned } from '../utils/quota'
 import { ABUSE_REFUSAL } from '../../shared/chatGuards'
 
 /** POST /api/chat-ban — lock this IP out of free-form chat for the day. */
 export default defineEventHandler(async (event) => {
-  assertAllowedOrigin(event)
-
   const ip = getClientIp(event)
 
   if (await isIpBanned(ip)) {

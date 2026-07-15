@@ -1,13 +1,10 @@
 import { generateWithGeminiFallback, parseGeminiModels } from '../utils/gemini'
-import { assertAllowedOrigin } from '../utils/originAllowlist'
 
 /**
  * Quick Gemini connectivity check (primary key, then backup key).
  * GET /api/gemini-health
  */
-export default defineEventHandler(async (event) => {
-  assertAllowedOrigin(event)
-
+export default defineEventHandler(async () => {
   const config = useRuntimeConfig()
   const primary = (config.geminiApiKey as string) || ''
   const backup = (config.geminiApiKeyBackup as string) || ''
