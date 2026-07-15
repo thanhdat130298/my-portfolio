@@ -7,6 +7,7 @@ import {
 } from '../utils/gemini'
 import { ABUSE_REFUSAL, evaluateChatInput } from '../../shared/chatGuards'
 import { getClientIp } from '../utils/requestIp'
+import { assertAllowedOrigin } from '../utils/originAllowlist'
 import {
   CHAT_MAX_CHARS,
   banIp,
@@ -47,6 +48,8 @@ ${knowledge}`
 }
 
 export default defineEventHandler(async (event) => {
+  assertAllowedOrigin(event)
+
   const config = useRuntimeConfig()
   const body = await readBody<ChatBody>(event)
   const message = body.message?.trim() || ''

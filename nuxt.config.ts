@@ -71,6 +71,14 @@ export default defineNuxtConfig({
         'gemini-3-flash-preview',
         'gemini-flash-latest',
       ].join(','),
+    // Comma-separated. Browser Origin/Referer must match (soft lock for /api/chat*).
+    allowedOrigins: [
+      process.env.ALLOWED_ORIGINS,
+      process.env.NUXT_PUBLIC_SITE_URL,
+      process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '',
+    ]
+      .filter(Boolean)
+      .join(','),
   },
 
   nitro: {
