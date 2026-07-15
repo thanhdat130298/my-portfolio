@@ -12,25 +12,39 @@ function parseOrigins(raw: unknown): string[] {
 function originFromUrl(value: string | undefined): string | null {
   if (!value) return null
   try {
-    return new URL(value).origin
+    return normalizeOrigin(new URL(value).origin)
   }
   catch {
     return null
   }
 }
 
+/** Runtime env + runtimeConfig (Nuxt only auto-overrides with NUXT_*). */
 function collectAllowedOrigins(event: H3Event): Set<string> {
   const config = useRuntimeConfig(event)
-  const allowed = new Set(parseOrigins(config.allowedOrigins))
+  const allowed = new Set<string>([
+    ...parseOrigins(config.allowedOrigins),
+    ...parseOrigins(process.env.NUXT_ALLOWED_ORIGINS),
+    ...parseOrigins(process.env.ALLOWED_ORIGINS),
+    ...parseOrigins(process.env.NUXT_PUBLIC_SITE_URL),
+  ])
 
-  // Local Nuxt/Vite defaults for development.
+  const vercelUrl = process.env.VERCEL_URL?.trim()
+  if (vercelUrl) {
+    allowed.add(normalizeOrigin(`https://${vercelUrl}`))
+  }
+
+  // Always allow this deployment's own host (fixes missing/stale allowlist env).
+  try {
+    allowed.add(normalizeOrigin(getRequestURL(event).origin))
+  }
+  catch {
+    // ignore
+  }
+
   if (import.meta.dev) {
-    for (const origin of [
-      'http://localhost:3000',
-      'http://127.0.0.1:3000',
-    ]) {
-      allowed.add(origin)
-    }
+    allowed.add('http://localhost:3000')
+    allowed.add('http://127.0.0.1:3000')
   }
 
   return allowed
@@ -38,19 +52,19 @@ function collectAllowedOrigins(event: H3Event): Set<string> {
 
 /** Reject requests whose Origin/Referer is missing or not on the allowlist. */
 export function assertAllowedOrigin(event: H3Event): void {
-  const allowed = collectAllowedOrigins(event)
-  if (!allowed.size) {
+  const requestOrigin =
+    originFromUrl(getHeader(event, 'origin'))
+    || originFromUrl(getHeader(event, 'referer'))
+
+  if (!requestOrigin) {
     throw createError({
       statusCode: 403,
       statusMessage: 'Forbidden',
     })
   }
 
-  const requestOrigin =
-    originFromUrl(getHeader(event, 'origin'))
-    || originFromUrl(getHeader(event, 'referer'))
-
-  if (!requestOrigin || !allowed.has(requestOrigin)) {
+  const allowed = collectAllowedOrigins(event)
+  if (!allowed.has(requestOrigin)) {
     throw createError({
       statusCode: 403,
       statusMessage: 'Forbidden',

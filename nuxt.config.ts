@@ -71,14 +71,13 @@ export default defineNuxtConfig({
         'gemini-3-flash-preview',
         'gemini-flash-latest',
       ].join(','),
-    // Comma-separated. Browser Origin/Referer must match (soft lock for /api/chat*).
-    allowedOrigins: [
-      process.env.ALLOWED_ORIGINS,
-      process.env.NUXT_PUBLIC_SITE_URL,
-      process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '',
-    ]
-      .filter(Boolean)
-      .join(','),
+    // Comma-separated. Prefer NUXT_ALLOWED_ORIGINS on Vercel (runtime override).
+    // Also reads ALLOWED_ORIGINS / VERCEL_URL / request host in originAllowlist.ts.
+    allowedOrigins:
+      process.env.NUXT_ALLOWED_ORIGINS
+      || process.env.ALLOWED_ORIGINS
+      || process.env.NUXT_PUBLIC_SITE_URL
+      || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : ''),
   },
 
   nitro: {
