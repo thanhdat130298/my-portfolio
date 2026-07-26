@@ -71,6 +71,7 @@ h3 {
   margin: 0;
   color: var(--color-ink-soft);
   flex: 1;
+  overflow-wrap: anywhere;
 }
 
 .highlights {

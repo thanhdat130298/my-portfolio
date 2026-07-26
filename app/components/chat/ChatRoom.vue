@@ -128,8 +128,9 @@ const { t } = useI18n()
 
 .messages {
   min-height: 16rem;
-  max-height: 26rem;
+  max-height: min(26rem, 55dvh);
   overflow: auto;
+  overscroll-behavior: contain;
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
@@ -137,6 +138,7 @@ const { t } = useI18n()
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
   background: color-mix(in srgb, var(--color-surface-elevated) 85%, transparent);
+  min-width: 0;
 }
 
 .typing {

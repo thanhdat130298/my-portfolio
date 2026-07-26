@@ -204,9 +204,13 @@ function pickRandomName() {
   border: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .row {
     grid-template-columns: 1fr;
+  }
+
+  .random {
+    width: 100%;
   }
 }
 </style>

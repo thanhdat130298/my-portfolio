@@ -15,15 +15,19 @@ defineProps<{
 <style scoped>
 .msg {
   max-width: 92%;
+  min-width: 0;
   padding: 0.7rem 0.85rem;
   border-radius: var(--radius-md);
   font-size: 0.92rem;
   line-height: 1.45;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .msg p {
   margin: 0;
   white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 .msg.user {

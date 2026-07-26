@@ -188,15 +188,16 @@ h1 {
 
 .float-card {
   position: absolute;
-  right: -0.5rem;
-  bottom: -1.25rem;
+  right: 0.5rem;
+  bottom: 0.75rem;
   display: grid;
   gap: 0.1rem;
-  padding: 1rem 1.15rem;
+  padding: 0.85rem 1rem;
   border-radius: 1rem;
   background: var(--color-surface-elevated);
   box-shadow: var(--shadow-soft);
   animation: float 3.2s ease-in-out infinite;
+  max-width: calc(100% - 1rem);
 }
 
 .float-value {
@@ -271,8 +272,10 @@ h1 {
   }
 
   .float-card {
-    right: -1rem;
-    bottom: -1.5rem;
+    right: -0.75rem;
+    bottom: -1.25rem;
+    padding: 1rem 1.15rem;
+    max-width: none;
   }
 
   .portrait {

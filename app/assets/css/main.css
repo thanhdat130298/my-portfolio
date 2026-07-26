@@ -80,6 +80,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 0.75rem);
   font-synthesis: none;
+  overflow-x: clip;
 }
 
 body {
@@ -90,6 +91,14 @@ body {
   background-attachment: fixed;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+@media (max-width: 900px) {
+  body {
+    /* Fixed backgrounds are janky / broken on many mobile browsers */
+    background-attachment: scroll;
+  }
 }
 
 body::before {

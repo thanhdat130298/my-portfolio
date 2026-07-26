@@ -129,8 +129,9 @@ useHead(() => ({
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.25rem;
+  gap: 0.75rem;
   width: 100%;
+  min-width: 0;
 }
 
 .brand {
@@ -138,7 +139,11 @@ useHead(() => ({
   font-weight: 800;
   letter-spacing: 0.04em;
   font-size: 1.15rem;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .nav {
@@ -167,8 +172,9 @@ useHead(() => ({
 .aside {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   flex-shrink: 0;
+  min-width: 0;
 }
 
 .prefs {
@@ -279,13 +285,35 @@ useHead(() => ({
 }
 
 @media (max-width: 480px) {
+  .header-inner {
+    gap: 0.4rem;
+  }
+
+  .brand {
+    font-size: 1rem;
+  }
+
+  .aside {
+    gap: 0.35rem;
+  }
+
   .prefs {
     gap: 0.1rem;
   }
 
   .pref-btn {
-    padding: 0.3rem 0.4rem;
-    font-size: 0.68rem;
+    padding: 0.3rem 0.35rem;
+    font-size: 0.65rem;
+  }
+
+  .theme-toggle .pref-btn {
+    min-width: 2.6rem;
+  }
+
+  .menu-toggle {
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.45rem;
   }
 }
 </style>

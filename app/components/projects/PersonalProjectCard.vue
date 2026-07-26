@@ -163,10 +163,32 @@ h3 {
 }
 
 .warn:hover .tooltip,
-.warn:focus-visible .tooltip {
+.warn:focus .tooltip,
+.warn:focus-visible .tooltip,
+.warn:focus-within .tooltip {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .tooltip {
+    left: 50%;
+    transform: translate(-50%, 0.25rem);
+    width: min(16.5rem, calc(100vw - 2.5rem));
+  }
+
+  .tooltip::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .warn:hover .tooltip,
+  .warn:focus .tooltip,
+  .warn:focus-visible .tooltip,
+  .warn:focus-within .tooltip {
+    transform: translate(-50%, 0);
+  }
 }
 
 
@@ -208,6 +230,7 @@ h3 {
   margin: 0;
   color: var(--color-ink-soft);
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .stack {

@@ -47,7 +47,7 @@
     "projects": {
       "label": "Sản phẩm nổi bật",
       "title": "Những dự án đã định hình tay nghề",
-      "lead": "Sản phẩm, kênh số, landing và backend — giao hàng theo hướng frontend-led, có chạm fullstack."
+      "lead": "Sản phẩm, kênh số, landing và backend — ưu tiên frontend, có chạm fullstack."
     },
     "profile": {
       "badge": "Frontend first · Hướng fullstack · Đà Nẵng",
@@ -58,20 +58,20 @@
     "about": {
       "label": "Giới thiệu",
       "title": "Frontend là gốc, fullstack là hướng đi",
-      "intro": "Từ 2020 mình chủ yếu ship frontend — từ thiết kế tới UI production, component và luồng client — đồng thời nhận việc backend trên sản phẩm thật. Frontend là thế mạnh cốt lõi; fullstack là hướng phát triển.",
+      "intro": "Từ 2020 mình chủ yếu làm frontend — từ thiết kế tới UI production, component và luồng client — đồng thời nhận việc backend trên sản phẩm thật. Frontend là thế mạnh cốt lõi; fullstack là hướng phát triển.",
       "lookingFor": "Mở cho các vị trí thiên frontend, có không gian lớn lên fullstack — team hiện đại, sản phẩm chỉn chu, workflow hỗ trợ AI.",
       "points": {
         "objective": {
           "title": "Mục tiêu",
-          "text": "Tiếp tục ship trải nghiệm frontend tốt, đồng thời sâu hơn backend để tự tin làm việc như fullstack."
+          "text": "Tiếp tục mang trải nghiệm frontend tốt, đồng thời sâu hơn backend để tự tin làm việc như fullstack."
         },
         "mission": {
           "title": "Sứ mệnh",
-          "text": "Biến design thành giao diện nhanh, dễ dùng — component sạch, UX vững, đủ fluency API/backend để ôm feature end-to-end khi cần."
+          "text": "Biến design thành giao diện nhanh, dễ dùng — component sạch, UX vững, đủ kỹ năng API/backend để ôm tính năng từ đầu đến cuối khi cần."
         },
         "approach": {
           "title": "Cách làm",
-          "text": "Ưu tiên frontend; nhảy vào Java/Spring Boot hoặc mobile khi sản phẩm cần sở hữu feature xuyên stack."
+          "text": "Ưu tiên frontend; nhảy vào Java/Spring Boot hoặc mobile khi sản phẩm cần sở hữu tính năng xuyên stack."
         }
       }
     },
@@ -120,7 +120,7 @@
   "projects": {
     "permate": {
       "period": "Th8 2023 – Hiện tại",
-      "description": "Nền tảng affiliate marketing — chủ yếu sở hữu web UI/UX từ design và luồng client, nối API, review code, hỗ trợ backend khi cần, và làm feature Flutter cho app mobile trong team ~20 người.",
+      "description": "Nền tảng affiliate marketing — chủ yếu sở hữu web UI/UX từ design và luồng client, nối API, review code, hỗ trợ backend khi cần, và làm tính năng Flutter cho app mobile trong team ~20 người.",
       "highlights": [
         "Web UI/UX (Vue / Nuxt)",
         "Màn hình & luồng Flutter",
@@ -155,7 +155,7 @@
     },
     "vf-framework": {
       "period": "Th5 2023 – Th8 2023",
-      "description": "Migrate luồng MyBatis legacy sang Spring Boot JPA, giữ kết quả khớp hệ cũ — API và persistence trên track hiện đại hóa Java backend.",
+      "description": "Chuyển truy cập dữ liệu MyBatis cũ sang Spring Boot JPA, giữ kết quả khớp hệ thống cũ — làm API và lớp lưu dữ liệu trong quá trình nâng cấp Java backend.",
       "highlights": [
         "MyBatis → Spring Boot JPA",
         "Kết quả tương thích legacy",
@@ -179,12 +179,12 @@
         {
           "name": "Permate",
           "period": "Th8 2023 – Hiện tại",
-          "summary": "Nền tảng affiliate. Web UI/UX (Vue/Nuxt), feature Flutter, tích hợp API, review code và hỗ trợ backend khi sản phẩm cần."
+          "summary": "Nền tảng affiliate. Web UI/UX (Vue/Nuxt), tính năng Flutter, tích hợp API, review code và hỗ trợ backend khi sản phẩm cần."
         },
         {
           "name": "Permate Flutter App",
           "period": "Th8 2023 – Hiện tại",
-          "summary": "Đóng góp màn hình Flutter, luồng và feature gắn API bên cạnh web product — ship UX mobile cho user affiliate."
+          "summary": "Đóng góp màn hình Flutter, luồng và tính năng gắn API bên cạnh web product — mang UX mobile cho user affiliate."
         }
       ]
     },
@@ -198,7 +198,7 @@
         {
           "name": "VF Framework",
           "period": "Th5 2023 – Th8 2023",
-          "summary": "Migrate MyBatis sang Spring Boot JPA, giữ kết quả khớp legacy."
+          "summary": "Chuyển MyBatis sang Spring Boot JPA, giữ kết quả khớp hệ thống cũ."
         },
         {
           "name": "Ucube Slim",
@@ -239,7 +239,7 @@
         {
           "name": "CRM IMS / Checkpoint / Hivelab",
           "period": "2020",
-          "summary": "CRM và HR nội bộ — feature, cập nhật UI, CRUD và fix bug trên Vue."
+          "summary": "CRM và HR nội bộ — tính năng, cập nhật UI, CRUD và fix bug trên Vue."
         }
       ]
     },
@@ -334,9 +334,9 @@
         "name": "My Portfolio",
         "idea": "Portfolio Nuxt với các section CV, light/dark + EN/VI, và chat Meet Dat AI gắn theo dữ liệu portfolio."
       },
-      "interview-qa": {
-        "name": "Interview Q&A",
-        "idea": "Ngân hàng câu hỏi phỏng vấn frontend (~450 câu), dùng offline để ôn mà không cần server."
+      "knowledge-page": {
+        "name": "Knowledge FStack",
+        "idea": "Nền tảng kiến thức phỏng vấn frontend — đọc bài theo category/tag/level, tìm kiếm, bookmark, tiến độ học, bình luận, và CMS admin (Tiptap + Supabase)."
       },
       "english-fe": {
         "name": "English App",

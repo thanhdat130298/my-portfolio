@@ -69,7 +69,7 @@ export const portfolio = {
 
   headline: 'Frontend-first developer, growing into fullstack',
   summary:
-    'Primarily a frontend developer with 5+ years building UIs in Vue, React, Nuxt, and Next — strong on UI/UX, components, and responsive product screens. Also hands-on with Java/Spring Boot and APIs from real projects, with a clear path toward fullstack delivery.',
+    'Frontend developer with 5+ years building UIs in Vue, React, Nuxt, and Next — strong in UI/UX, components, and responsive screens. Also hands-on with Java/Spring Boot and APIs, growing toward fullstack.',
 
   lookingFor:
     'Open to frontend-heavy roles with room to grow as a fullstack developer — modern teams, solid product craft, and AI-assisted workflows.',
@@ -176,7 +176,7 @@ export const portfolio = {
       period: 'Aug 2023 – Present',
       company: 'Permate Global',
       description:
-        'Affiliate marketing platform — main ownership on web UI/UX from designs and client flows, plus API wiring, code review, backend support when needed, and Flutter app features for the mobile product on a 20-person team.',
+        'Affiliate marketing platform. Main ownership of web UI/UX from designs and client flows, plus API integration, code review, backend support when needed, and Flutter features for the mobile app on a 20-person team.',
       stack: ['Vue 2', 'Nuxt.js', 'Flutter'],
       highlights: [
         'Web UI/UX (Vue / Nuxt)',
@@ -192,7 +192,7 @@ export const portfolio = {
       period: 'Oct 2021 – May 2022',
       company: 'FPT Software',
       description:
-        'Digital services channel for end users. Built shared components, screens from a base library, API integrations, unit tests, and coordinated with BA/BrSE/clients on a team of 11.',
+        'Digital services channel for end users. Built shared components, screens from a base library, API integrations, unit tests, and worked with BA/BrSE/clients on a team of 11.',
       stack: ['Vue.js', 'Nuxt.js'],
       highlights: [
         'Common component library',
@@ -223,7 +223,7 @@ export const portfolio = {
       period: 'Jun 2022 – Aug 2022',
       company: 'Freelance',
       description:
-        'Landing page and page/component implementation with React and Next.js in a team of four.',
+        'Landing page and reusable page/component work with React and Next.js in a team of four.',
       stack: ['Next.js', 'React'],
       highlights: ['Landing page', 'Reusable components'],
       teamSize: 4,
@@ -234,7 +234,7 @@ export const portfolio = {
       period: 'May 2023 – Aug 2023',
       company: 'FPT Software',
       description:
-        'Migrated legacy MyBatis data flows to Spring Boot JPA while keeping results aligned with the existing system — API and persistence work on a Java backend modernization track.',
+        'Moved legacy MyBatis data access to Spring Boot JPA while keeping results compatible with the old system — API and database work on a Java backend upgrade.',
       stack: ['Java', 'Spring Boot', 'JPA', 'MyBatis', 'SQL'],
       highlights: [
         'MyBatis → Spring Boot JPA migration',
@@ -249,7 +249,7 @@ export const portfolio = {
       period: 'Mar 2021 – Jul 2021',
       company: 'NCCSOFT',
       description:
-        'React Native app for factory worker surveys, health evaluations, blogs, and Q&A — Figma-driven UI with backend coordination and bug fixing.',
+        'React Native app for factory worker surveys, health checks, blogs, and Q&A — UI from Figma, with backend coordination and bug fixes.',
       stack: ['React Native'],
       highlights: ['Figma to mobile UI', 'App logic & flows'],
       teamSize: 7,
@@ -276,14 +276,14 @@ export const portfolio = {
           name: 'Permate',
           period: 'Aug 2023 – Present',
           summary:
-            'Affiliate marketing platform. Web UI/UX (Vue/Nuxt), Flutter app features, API integration, code review, and backend support when the product needs it.',
+            'Affiliate marketing platform. Web UI/UX (Vue/Nuxt), Flutter app features, API integration, code review, and backend support when needed.',
             stack: ['Vue 2', 'Nuxt.js', 'Flutter'],
         },
         {
           name: 'Permate Flutter App',
           period: 'Aug 2023 – Present',
           summary:
-            'Contribute Flutter app screens, flows, and API-backed features alongside the web product — shipping mobile UX for affiliate users.',
+            'Built Flutter screens, flows, and API-backed features alongside the web product for affiliate users.',
           stack: ['Flutter', 'Dart', 'REST API'],
         },
       ],
@@ -298,19 +298,19 @@ export const portfolio = {
         {
           name: 'VF Framework',
           period: 'May 2023 – Aug 2023',
-          summary: 'Migrated MyBatis flows to Spring Boot JPA while matching legacy results.',
+          summary: 'Moved MyBatis data access to Spring Boot JPA while matching legacy results.',
           stack: ['Java', 'Spring Boot', 'JPA'],
         },
         {
           name: 'Ucube Slim',
           period: 'Jan 2023 – May 2023',
-          summary: 'Backend controller and screen testing; sub-leader support for task delivery and reporting.',
+          summary: 'Tested backend controllers and screens; helped the sub-leader with task tracking and reporting.',
           stack: ['Spring Boot'],
         },
         {
           name: 'Java & Low-code Training',
           period: 'May 2022 – Jan 2023',
-          summary: 'Built REST APIs with Spring Boot/MyBatis; trained on WebSquare and Nexacro.',
+          summary: 'Built REST APIs with Spring Boot/MyBatis; trained teammates on WebSquare and Nexacro.',
           stack: ['Spring Boot', 'MyBatis', 'Low-code'],
         },
         {
@@ -385,11 +385,11 @@ export const portfolio = {
       stack: ['Nuxt 4', 'Vue 3', 'TypeScript', 'CSS'],
     },
     {
-      id: 'interview-qa',
-      name: 'Interview Q&A',
-      demoUrl: 'https://thanhdat130298.github.io/interview-qa/',
-      githubUrl: 'https://github.com/thanhdat130298/interview-qa',
-      stack: ['HTML', 'CSS', 'JavaScript'],
+      id: 'knowledge-page',
+      name: 'Knowledge FStack',
+      demoUrl: 'https://knowledge-page-two.vercel.app',
+      githubUrl: 'https://github.com/thanhdat130298/knowledge-page',
+      stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Tiptap'],
     },
     {
       id: 'english-fe',

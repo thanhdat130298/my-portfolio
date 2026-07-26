@@ -36,7 +36,7 @@
     "bannerAlt": "{name} — portfolio banner",
     "role": "Web Developer · Frontend → Fullstack",
     "location": "Da Nang, Vietnam",
-    "summary": "Primarily a frontend developer with 5+ years building UIs in Vue, React, Nuxt, and Next — strong on UI/UX, components, and responsive product screens. Also hands-on with Java/Spring Boot and APIs from real projects, with a clear path toward fullstack delivery.",
+    "summary": "Frontend developer with 5+ years building UIs in Vue, React, Nuxt, and Next — strong in UI/UX, components, and responsive screens. Also hands-on with Java/Spring Boot and APIs, growing toward fullstack.",
     "stats": {
       "projects": "Projects shipped",
       "companies": "Companies & freelance",
@@ -47,31 +47,31 @@
     "projects": {
       "label": "Featured work",
       "title": "Projects that shaped the craft",
-      "lead": "Selected product, channel, landing, and backend work — frontend-led delivery with fullstack exposure."
+      "lead": "Selected product, channel, landing, and backend work — frontend-first delivery with some fullstack experience."
     },
     "profile": {
       "badge": "Frontend first · Fullstack-bound · Da Nang",
-      "caption": "Nguyen Thanh Dat — frontend-focused web developer (Vue / React / Nuxt / Next), expanding toward fullstack with Spring Boot and API work.",
+      "caption": "Nguyen Thanh Dat — frontend-focused web developer (Vue / React / Nuxt / Next), expanding toward fullstack with Spring Boot and APIs.",
       "education": "Education: Informatics Teacher Education — The University of Danang, University of Education.",
       "title": "Frontend craft, fullstack ambition"
     },
     "about": {
       "label": "About",
       "title": "Frontend first, fullstack direction",
-      "intro": "Since 2020 I have shipped mostly on the frontend — design to production UI, components, and client flows — while picking up backend work on real products. Frontend is the core strength; fullstack is the direction.",
+      "intro": "Since 2020 I have mostly built frontend — from design to production UI, components, and client flows — while also taking on backend work on real products. Frontend is the core strength; fullstack is the direction.",
       "lookingFor": "Open to frontend-heavy roles with room to grow as a fullstack developer — modern teams, solid product craft, and AI-assisted workflows.",
       "points": {
         "objective": {
           "title": "Objective",
-          "text": "Keep shipping excellent frontend experiences while deepening backend skills to operate confidently as a fullstack developer."
+          "text": "Keep shipping strong frontend experiences while deepening backend skills to work confidently as a fullstack developer."
         },
         "mission": {
           "title": "Mission",
-          "text": "Turn designs into fast, responsive interfaces people enjoy — with clean components, solid UX, and enough API/backend fluency to own features end-to-end when needed."
+          "text": "Turn designs into fast, usable interfaces — clean components, solid UX, and enough API/backend skill to own features end-to-end when needed."
         },
         "approach": {
           "title": "Approach",
-          "text": "Frontend-first by default; jump into Java/Spring Boot or mobile when the product needs full-feature ownership across the stack."
+          "text": "Frontend-first by default; step into Java/Spring Boot or mobile when the product needs ownership across the stack."
         }
       }
     },
@@ -120,7 +120,7 @@
   "projects": {
     "permate": {
       "period": "Aug 2023 – Present",
-      "description": "Affiliate marketing platform — main ownership on web UI/UX from designs and client flows, plus API wiring, code review, backend support when needed, and Flutter app features for the mobile product on a 20-person team.",
+      "description": "Affiliate marketing platform. Main ownership of web UI/UX from designs and client flows, plus API integration, code review, backend support when needed, and Flutter features for the mobile app on a 20-person team.",
       "highlights": [
         "Web UI/UX (Vue / Nuxt)",
         "Flutter app screens & flows",
@@ -129,7 +129,7 @@
     },
     "lgu": {
       "period": "Oct 2021 – May 2022",
-      "description": "Digital services channel for end users. Built shared components, screens from a base library, API integrations, unit tests, and coordinated with BA/BrSE/clients on a team of 11.",
+      "description": "Digital services channel for end users. Built shared components, screens from a base library, API integrations, unit tests, and worked with BA/BrSE/clients on a team of 11.",
       "highlights": [
         "Common component library",
         "Screen & API integration",
@@ -147,7 +147,7 @@
     },
     "cinvest": {
       "period": "Jun 2022 – Aug 2022",
-      "description": "Landing page and page/component implementation with React and Next.js in a team of four.",
+      "description": "Landing page and reusable page/component work with React and Next.js in a team of four.",
       "highlights": [
         "Landing page",
         "Reusable components"
@@ -155,7 +155,7 @@
     },
     "vf-framework": {
       "period": "May 2023 – Aug 2023",
-      "description": "Migrated legacy MyBatis data flows to Spring Boot JPA while keeping results aligned with the existing system — API and persistence work on a Java backend modernization track.",
+      "description": "Moved legacy MyBatis data access to Spring Boot JPA while keeping results compatible with the old system — API and database work on a Java backend upgrade.",
       "highlights": [
         "MyBatis → Spring Boot JPA migration",
         "Legacy-compatible query/results",
@@ -164,7 +164,7 @@
     },
     "survey": {
       "period": "Mar 2021 – Jul 2021",
-      "description": "React Native app for factory worker surveys, health evaluations, blogs, and Q&A — Figma-driven UI with backend coordination and bug fixing.",
+      "description": "React Native app for factory worker surveys, health checks, blogs, and Q&A — UI from Figma, with backend coordination and bug fixes.",
       "highlights": [
         "Figma to mobile UI",
         "App logic & flows"
@@ -179,12 +179,12 @@
         {
           "name": "Permate",
           "period": "Aug 2023 – Present",
-          "summary": "Affiliate marketing platform. Web UI/UX (Vue/Nuxt), Flutter app features, API integration, code review, and backend support when the product needs it."
+          "summary": "Affiliate marketing platform. Web UI/UX (Vue/Nuxt), Flutter app features, API integration, code review, and backend support when needed."
         },
         {
           "name": "Permate Flutter App",
           "period": "Aug 2023 – Present",
-          "summary": "Contribute Flutter app screens, flows, and API-backed features alongside the web product — shipping mobile UX for affiliate users."
+          "summary": "Built Flutter screens, flows, and API-backed features alongside the web product for affiliate users."
         }
       ]
     },
@@ -198,17 +198,17 @@
         {
           "name": "VF Framework",
           "period": "May 2023 – Aug 2023",
-          "summary": "Migrated MyBatis flows to Spring Boot JPA while matching legacy results."
+          "summary": "Moved MyBatis data access to Spring Boot JPA while matching legacy results."
         },
         {
           "name": "Ucube Slim",
           "period": "Jan 2023 – May 2023",
-          "summary": "Backend controller and screen testing; sub-leader support for task delivery and reporting."
+          "summary": "Tested backend controllers and screens; helped the sub-leader with task tracking and reporting."
         },
         {
           "name": "Java & Low-code Training",
           "period": "May 2022 – Jan 2023",
-          "summary": "Built REST APIs with Spring Boot/MyBatis; trained on WebSquare and Nexacro."
+          "summary": "Built REST APIs with Spring Boot/MyBatis; trained teammates on WebSquare and Nexacro."
         },
         {
           "name": "LGU+ Digital Channel",
@@ -334,9 +334,9 @@
         "name": "My Portfolio",
         "idea": "A Nuxt portfolio with CV sections, light/dark + EN/VI, and an on-page Meet Dat AI chat grounded on portfolio data."
       },
-      "interview-qa": {
-        "name": "Interview Q&A",
-        "idea": "Offline-friendly frontend interview question bank (~450 items) for focused practice without needing a live server."
+      "knowledge-page": {
+        "name": "Knowledge FStack",
+        "idea": "A frontend interview knowledge platform — browse articles by category, tag, and level, with search, bookmarks, learning progress, comments, and an admin CMS (Tiptap + Supabase)."
       },
       "english-fe": {
         "name": "English App",

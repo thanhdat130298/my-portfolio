@@ -90,10 +90,22 @@ const { name } = useLocalizedPortfolio()
 @media (max-width: 800px) {
   .panel {
     grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
   }
 
   .portrait {
     max-width: 260px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .copy {
+    width: 100%;
+  }
+
+  .lead {
+    margin-inline: auto;
   }
 }
 </style>
