@@ -2,7 +2,7 @@
 
 Personal portfolio site for **Nguyen Thanh Dat (Đạt)** — a frontend-first web developer in Da Nang, growing toward fullstack.
 
-**Live demo:** [https://my-portfolio-drab-phi-hko31oj1lt.vercel.app/](https://my-portfolio-drab-phi-hko31oj1lt.vercel.app/)
+**Live demo:** https://dat-profile-developer.vercel.app/
 
 ## What it is
 
