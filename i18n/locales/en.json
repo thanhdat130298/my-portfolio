@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Dat Nguyen — Web Developer",
-    "description": "Nguyen Thanh Dat — Web Developer with 5+ years of experience in Vue, React, Nuxt, and Next. Based in Da Nang, Vietnam."
+    "description": "Nguyen Thanh Dat — Software Developer with 5+ years of experience in React, Vue, Nuxt, Next, Node.js, and Spring Boot. Based in Da Nang, Vietnam."
   },
   "ui": {
     "contactMe": "Contact Me",
@@ -34,9 +34,9 @@
     "highlights": "Highlights",
     "floatLabel": "Years building web apps",
     "bannerAlt": "{name} — portfolio banner",
-    "role": "Web Developer · Frontend → Fullstack",
+    "role": "Software Developer · Frontend & Fullstack",
     "location": "Da Nang, Vietnam",
-    "summary": "Frontend developer with 5+ years building UIs in Vue, React, Nuxt, and Next — strong in UI/UX, components, and responsive screens. Also hands-on with Java/Spring Boot and APIs, growing toward fullstack.",
+    "summary": "Software Developer with 5+ years building and maintaining web apps — strong frontend in React, TypeScript, Vue, and Nuxt, plus Node.js/Express and Java Spring Boot for REST APIs. Also React Native and Flutter; focused on clean code, refactoring, and performance.",
     "stats": {
       "projects": "Projects shipped",
       "companies": "Companies & freelance",
@@ -47,51 +47,51 @@
     "projects": {
       "label": "Featured work",
       "title": "Projects that shaped the craft",
-      "lead": "Selected product, channel, landing, and backend work — frontend-first delivery with some fullstack experience."
+      "lead": "Selected affiliate, digital channel, CMS, mobile, and internal-system work — frontend-strong with fullstack delivery."
     },
     "profile": {
-      "badge": "Frontend first · Fullstack-bound · Da Nang",
-      "caption": "Nguyen Thanh Dat — frontend-focused web developer (Vue / React / Nuxt / Next), expanding toward fullstack with Spring Boot and APIs.",
-      "education": "Education: Informatics Teacher Education — The University of Danang, University of Education.",
-      "title": "Frontend craft, fullstack ambition"
+      "badge": "Software Developer · Frontend & Fullstack · Da Nang",
+      "caption": "Nguyen Thanh Dat — software developer with strong frontend (React / Vue / Nuxt / Next) and hands-on backend (Node.js / Spring Boot).",
+      "education": "Education: Informatics Teacher Education — The University of Danang, University of Education (Aug 2016 – Aug 2021).",
+      "title": "Strong frontend, proven fullstack delivery"
     },
     "about": {
       "label": "About",
-      "title": "Frontend first, fullstack direction",
-      "intro": "Since 2020 I have mostly built frontend — from design to production UI, components, and client flows — while also taking on backend work on real products. Frontend is the core strength; fullstack is the direction.",
-      "lookingFor": "Open to frontend-heavy roles with room to grow as a fullstack developer — modern teams, solid product craft, and AI-assisted workflows.",
+      "title": "Software developer across web and APIs",
+      "intro": "Software Developer with over 5 years building and maintaining web applications. Strong front-end expertise in React, TypeScript, Vue, and Nuxt — plus mobile (React Native, Flutter) and REST API work with Java Spring Boot and Node.js.",
+      "lookingFor": "Open to software / frontend / fullstack roles where clean code, product delivery, and cross-team collaboration matter.",
       "points": {
         "objective": {
           "title": "Objective",
-          "text": "Keep shipping strong frontend experiences while deepening backend skills to work confidently as a fullstack developer."
+          "text": "Ship reliable production features with clean, maintainable code — refactoring, performance optimization, and troubleshooting across frontend and fullstack work."
         },
         "mission": {
           "title": "Mission",
-          "text": "Turn designs into fast, usable interfaces — clean components, solid UX, and enough API/backend skill to own features end-to-end when needed."
+          "text": "Deliver solid UI/UX and complete product flows while collaborating with designers, backend, BA/BrSE, and clients to resolve issues and finish on time."
         },
         "approach": {
           "title": "Approach",
-          "text": "Frontend-first by default; step into Java/Spring Boot or mobile when the product needs ownership across the stack."
+          "text": "Frontend-strong by default; step into Node.js/Express or Java Spring Boot, code review, mentoring, and mobile when the product needs broader ownership."
         }
       }
     },
     "skills": {
       "label": "Technical stack",
-      "title": "Frontend first — fullstack in progress",
-      "lead": "Core strength on the UI side; backend skills from real FPT/Permate work as the path toward fullstack.",
+      "title": "Frontend craft — fullstack experience",
+      "lead": "Strong UI frameworks and state tooling; backend APIs from FPT, NCC, and real delivery work.",
       "primary": "Primary",
       "also": "Also worked with",
       "frontendTitle": "Frontend",
-      "frontendLead": "Main craft — UI systems, responsive layouts, and product screens.",
+      "frontendLead": "Main craft — UI systems, frameworks, state, and product screens.",
       "backendTitle": "Backend",
-      "backendLead": "Growing fullstack path — APIs and services from FPT/Permate and real delivery work.",
+      "backendLead": "REST APIs and services from FPT, NCC, and real delivery work.",
       "workingStyle": "Working style",
       "languages": "Languages",
-      "softSkills": "Teamwork · Attention to detail · Fast learner · Deadline-driven · Responsible ownership · Clear communication",
+      "softSkills": "Team collaboration · Clean code · Code review & mentoring · Testing · UI/UX analysis · Task breakdown · Independent delivery",
       "langVi": "Vietnamese",
       "langViLevel": "Native",
       "langEn": "English",
-      "langEnLevel": "B1 — reading & basic communication"
+      "langEnLevel": "Technical reading and communication"
     },
     "career": {
       "label": "Career notes",
@@ -101,7 +101,7 @@
     "contact": {
       "label": "Visit / reach out",
       "title": "Let’s talk about the next build",
-      "lead": "Open to frontend-heavy roles with a fullstack growth path. Prefer email for opportunities.",
+      "lead": "Open to software / frontend / fullstack roles. Prefer email for opportunities.",
       "email": "Email",
       "phone": "Phone",
       "address": "Address",
@@ -119,143 +119,121 @@
   },
   "projects": {
     "permate": {
-      "period": "Aug 2023 – Present",
-      "description": "Affiliate marketing platform. Main ownership of web UI/UX from designs and client flows, plus API integration, code review, backend support when needed, and Flutter features for the mobile app on a 20-person team.",
+      "period": "Aug 2023 – May 2026",
+      "description": "SaaS partnership automation platform for affiliate marketing — campaigns, partners, conversion tracking, commissions, and real-time analytics. Front-end ownership with Vue/Nuxt, REST integration, reusable UI, code review, and Flutter in the stack on a 20-person team.",
       "highlights": [
-        "Web UI/UX (Vue / Nuxt)",
-        "Flutter app screens & flows",
-        "API integration & code review"
+        "New affiliate-platform features (Vue / Nuxt)",
+        "Reusable UI components & REST API integration",
+        "State management & designer/backend collaboration",
+        "Code review and cross-team support"
+      ]
+    },
+    "vf-framework": {
+      "period": "Jun 2022 – Jul 2023",
+      "description": "Migration project moving MyBatis data access to Spring Boot JPA. Fullstack delivery including flow testing, fresher training/reporting, and low-code study to meet requirements on a 4-person team.",
+      "highlights": [
+        "MyBatis → Spring Boot JPA migration",
+        "End-to-end flow testing",
+        "Fresher training & task reporting",
+        "Low-code adaptation for requirements"
       ]
     },
     "lgu": {
       "period": "Oct 2021 – May 2022",
-      "description": "Digital services channel for end users. Built shared components, screens from a base library, API integrations, unit tests, and worked with BA/BrSE/clients on a team of 11.",
+      "description": "Digital services channel for end users. Built and enhanced reusable components and screens, integrated REST APIs across frontend/backend, wrote unit tests, and collaborated with BA/BrSE/clients on a team of 11.",
       "highlights": [
-        "Common component library",
-        "Screen & API integration",
-        "Unit tests per screen"
+        "Reusable components & UI screens",
+        "REST API + business flow handling",
+        "Unit tests per screen",
+        "BA / BrSE / client collaboration"
       ]
     },
     "dsh": {
       "period": "Jul 2021 – Sep 2021",
-      "description": "Marketing landing pages for a blockchain product — pages, components, business logic, and full responsive delivery with design-system tooling.",
+      "description": "CMS / marketing surfaces for a blockchain product — responsive pages, reusable components, business logic, and UX improvements with design-system tooling.",
       "highlights": [
-        "Responsive landing pages",
-        "Component-driven UI",
-        "Storybook workflow"
-      ]
-    },
-    "cinvest": {
-      "period": "Jun 2022 – Aug 2022",
-      "description": "Landing page and reusable page/component work with React and Next.js in a team of four.",
-      "highlights": [
-        "Landing page",
-        "Reusable components"
-      ]
-    },
-    "vf-framework": {
-      "period": "May 2023 – Aug 2023",
-      "description": "Moved legacy MyBatis data access to Spring Boot JPA while keeping results compatible with the old system — API and database work on a Java backend upgrade.",
-      "highlights": [
-        "MyBatis → Spring Boot JPA migration",
-        "Legacy-compatible query/results",
-        "REST / service layer support"
+        "Responsive UI pages & components",
+        "Business logic implementation",
+        "UI issue fixes & UX improvements"
       ]
     },
     "survey": {
-      "period": "Mar 2021 – Jul 2021",
-      "description": "React Native app for factory worker surveys, health checks, blogs, and Q&A — UI from Figma, with backend coordination and bug fixes.",
+      "period": "Mar 2021 – Jun 2021",
+      "description": "Mobile survey / health-check app (We Check). Built UI from Figma, implemented app logic, and worked with backend to improve usability.",
       "highlights": [
         "Figma to mobile UI",
-        "App logic & flows"
+        "App logic & functions",
+        "Backend collaboration for usability"
+      ]
+    },
+    "internal-crm": {
+      "period": "Jun 2021 – Sep 2021",
+      "description": "Internal business applications with Node.js/Express REST APIs (CRUD, validation, error handling) and Vue UI — fullstack delivery for CRM/HR-style systems on a 10-person team.",
+      "highlights": [
+        "Node.js / Express REST APIs",
+        "CRUD, validation & error handling",
+        "Vue UI + API integration",
+        "Consistent data flow across layers"
       ]
     }
   },
   "experience": {
     "permate": {
-      "role": "Developer",
-      "period": "Aug 2023 – Present",
+      "role": "Front-end Developer",
+      "period": "Aug 2023 – May 2026",
       "projects": [
         {
           "name": "Permate",
-          "period": "Aug 2023 – Present",
-          "summary": "Affiliate marketing platform. Web UI/UX (Vue/Nuxt), Flutter app features, API integration, code review, and backend support when needed."
-        },
-        {
-          "name": "Permate Flutter App",
-          "period": "Aug 2023 – Present",
-          "summary": "Built Flutter screens, flows, and API-backed features alongside the web product for affiliate users."
+          "period": "Aug 2023 – May 2026",
+          "summary": "Affiliate marketing SaaS — Vue/Nuxt features, reusable UI, REST APIs, state management, code review, and Flutter in the product stack."
         }
       ]
     },
     "fpt": {
-      "role": "Developer",
+      "role": "Fullstack Developer",
       "period": "Oct 2021 – Aug 2023",
-      "achievements": [
-        "🏆 Best Performance of BU 2022"
-      ],
       "projects": [
         {
           "name": "VF Framework",
-          "period": "May 2023 – Aug 2023",
-          "summary": "Moved MyBatis data access to Spring Boot JPA while matching legacy results."
-        },
-        {
-          "name": "Ucube Slim",
-          "period": "Jan 2023 – May 2023",
-          "summary": "Tested backend controllers and screens; helped the sub-leader with task tracking and reporting."
-        },
-        {
-          "name": "Java & Low-code Training",
-          "period": "May 2022 – Jan 2023",
-          "summary": "Built REST APIs with Spring Boot/MyBatis; trained teammates on WebSquare and Nexacro."
+          "period": "Jun 2022 – Jul 2023",
+          "summary": "Migrated MyBatis to Spring Boot JPA; tested flows; trained freshers and studied low-code for requirements."
         },
         {
           "name": "LGU+ Digital Channel",
           "period": "Oct 2021 – May 2022",
-          "summary": "Vue/Nuxt digital services UI, shared components, APIs, tests, and stakeholder collaboration."
+          "summary": "Vue/Nuxt digital services UI, reusable components, REST APIs, unit tests, and BA/BrSE/client collaboration."
+        }
+      ]
+    },
+    "freelance": {
+      "role": "Front-end Developer",
+      "period": "Jun 2022 – Aug 2022",
+      "projects": [
+        {
+          "name": "Cinvest",
+          "period": "Jun 2022 – Aug 2022",
+          "summary": "Next.js / React landing pages and reusable components."
         }
       ]
     },
     "ncc": {
-      "role": "Developer / Intern",
+      "role": "Front-end Developer",
       "period": "Apr 2020 – Sep 2021",
       "projects": [
         {
           "name": "DSH",
           "period": "Jul 2021 – Sep 2021",
-          "summary": "Blockchain landing pages with React, Next, Gatsby, and Storybook."
+          "summary": "Blockchain CMS UI with React, Next, Gatsby, Styled Components, and Storybook."
         },
         {
-          "name": "Survey App",
-          "period": "Mar 2021 – Jul 2021",
-          "summary": "React Native workplace survey and content app from Figma designs."
+          "name": "We Check",
+          "period": "Mar 2021 – Jun 2021",
+          "summary": "React Native health-survey app from Figma with Redux Saga."
         },
         {
-          "name": "ToiYeuTien",
-          "period": "Oct 2020",
-          "summary": "Mortgage and tax calculator tools in Vue."
-        },
-        {
-          "name": "CRM IMS / Checkpoint / Hivelab",
-          "period": "2020",
-          "summary": "Internal CRM and HR systems — features, UI updates, CRUD flows, and bug fixes in Vue."
-        }
-      ]
-    },
-    "freelance": {
-      "role": "Frontend Developer",
-      "period": "2022 – 2023",
-      "projects": [
-        {
-          "name": "Cinvest",
-          "period": "Jun 2022 – Aug 2022",
-          "summary": "Next.js landing pages and components."
-        },
-        {
-          "name": "OTG",
-          "period": "Apr 2023 – May 2023",
-          "summary": "Responsive UI implementation from design."
+          "name": "Internal CRM / HRM",
+          "period": "Jun 2021 – Sep 2021",
+          "summary": "Node.js/Express REST APIs and Vue UI for internal CRM/HR systems — CRUD, validation, and layer integration."
         }
       ]
     }

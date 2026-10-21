@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Dat Nguyen — Web Developer",
-    "description": "Nguyễn Thành Đạt — Web Developer với 5+ năm kinh nghiệm Vue, React, Nuxt và Next. Sống tại Đà Nẵng, Việt Nam."
+    "description": "Nguyễn Thành Đạt — Software Developer với 5+ năm kinh nghiệm React, Vue, Nuxt, Next, Node.js và Spring Boot. Sống tại Đà Nẵng, Việt Nam."
   },
   "ui": {
     "contactMe": "Liên hệ",
@@ -34,9 +34,9 @@
     "highlights": "Điểm nổi bật",
     "floatLabel": "Năm xây dựng web app",
     "bannerAlt": "{name} — ảnh banner portfolio",
-    "role": "Web Developer · Frontend → Fullstack",
+    "role": "Software Developer · Frontend & Fullstack",
     "location": "Đà Nẵng, Việt Nam",
-    "summary": "Chủ yếu làm frontend với 5+ năm xây UI trên Vue, React, Nuxt và Next — mạnh về UI/UX, component và màn hình responsive. Cũng đã làm Java/Spring Boot và API trên dự án thật, đang hướng tới fullstack.",
+    "summary": "Software Developer với 5+ năm xây và duy trì web app — mạnh frontend React, TypeScript, Vue, Nuxt; có Node.js/Express và Java Spring Boot cho REST API. Cũng làm React Native và Flutter; chú trọng clean code, refactor và hiệu năng.",
     "stats": {
       "projects": "Dự án đã bàn giao",
       "companies": "Công ty & freelance",
@@ -47,51 +47,51 @@
     "projects": {
       "label": "Sản phẩm nổi bật",
       "title": "Những dự án đã định hình tay nghề",
-      "lead": "Sản phẩm, kênh số, landing và backend — ưu tiên frontend, có chạm fullstack."
+      "lead": "Affiliate, kênh số, CMS, mobile và hệ thống nội bộ — mạnh frontend, có bàn giao fullstack."
     },
     "profile": {
-      "badge": "Frontend first · Hướng fullstack · Đà Nẵng",
-      "caption": "Nguyễn Thành Đạt — web developer thiên frontend (Vue / React / Nuxt / Next), mở rộng fullstack với Spring Boot và API.",
-      "education": "Học vấn: Sư phạm Tin học — Đại học Đà Nẵng, Đại học Sư phạm.",
-      "title": "Tay nghề frontend, tham vọng fullstack"
+      "badge": "Software Developer · Frontend & Fullstack · Đà Nẵng",
+      "caption": "Nguyễn Thành Đạt — software developer mạnh frontend (React / Vue / Nuxt / Next) và có kinh nghiệm backend (Node.js / Spring Boot).",
+      "education": "Học vấn: Sư phạm Tin học — Đại học Đà Nẵng, Đại học Sư phạm (08/2016 – 08/2021).",
+      "title": "Frontend vững, fullstack đã làm thật"
     },
     "about": {
       "label": "Giới thiệu",
-      "title": "Frontend là gốc, fullstack là hướng đi",
-      "intro": "Từ 2020 mình chủ yếu làm frontend — từ thiết kế tới UI production, component và luồng client — đồng thời nhận việc backend trên sản phẩm thật. Frontend là thế mạnh cốt lõi; fullstack là hướng phát triển.",
-      "lookingFor": "Mở cho các vị trí thiên frontend, có không gian lớn lên fullstack — team hiện đại, sản phẩm chỉn chu, workflow hỗ trợ AI.",
+      "title": "Software developer cho web và API",
+      "intro": "Software Developer với hơn 5 năm xây và duy trì web app. Mạnh front-end React, TypeScript, Vue, Nuxt — kèm mobile (React Native, Flutter) và REST API với Java Spring Boot, Node.js.",
+      "lookingFor": "Mở cho vai trò software / frontend / fullstack — nơi clean code, bàn giao sản phẩm và phối hợp đa team là trọng tâm.",
       "points": {
         "objective": {
           "title": "Mục tiêu",
-          "text": "Tiếp tục mang trải nghiệm frontend tốt, đồng thời sâu hơn backend để tự tin làm việc như fullstack."
+          "text": "Ship tính năng production ổn định với code sạch, dễ maintain — refactor, tối ưu hiệu năng và troubleshooting xuyên frontend/fullstack."
         },
         "mission": {
           "title": "Sứ mệnh",
-          "text": "Biến design thành giao diện nhanh, dễ dùng — component sạch, UX vững, đủ kỹ năng API/backend để ôm tính năng từ đầu đến cuối khi cần."
+          "text": "Mang UI/UX tốt và luồng sản phẩm trọn vẹn, phối hợp designer, backend, BA/BrSE và client để giải quyết vấn đề và bàn giao đúng hạn."
         },
         "approach": {
           "title": "Cách làm",
-          "text": "Ưu tiên frontend; nhảy vào Java/Spring Boot hoặc mobile khi sản phẩm cần sở hữu tính năng xuyên stack."
+          "text": "Ưu tiên frontend; nhảy vào Node.js/Express hoặc Java Spring Boot, review code, mentoring và mobile khi sản phẩm cần ownership rộng hơn."
         }
       }
     },
     "skills": {
       "label": "Tech stack",
-      "title": "Frontend trước — fullstack đang mở rộng",
-      "lead": "Thế mạnh cốt lõi ở UI; backend từ công việc thật tại FPT/Permate là đường tới fullstack.",
+      "title": "Frontend vững — fullstack đã làm",
+      "lead": "Mạnh framework UI và state; backend API từ FPT, NCC và dự án thực tế.",
       "primary": "Chính",
       "also": "Đã tiếp xúc",
       "frontendTitle": "Frontend",
-      "frontendLead": "Tay nghề chính — hệ UI, layout responsive và màn hình sản phẩm.",
+      "frontendLead": "Tay nghề chính — hệ UI, framework, state và màn hình sản phẩm.",
       "backendTitle": "Backend",
-      "backendLead": "Đường fullstack — API và service từ FPT/Permate và dự án thực tế.",
+      "backendLead": "REST API và service từ FPT, NCC và dự án thực tế.",
       "workingStyle": "Phong cách làm việc",
       "languages": "Ngôn ngữ",
-      "softSkills": "Làm việc nhóm · Tỉ mỉ · Học nhanh · Bám deadline · Chịu trách nhiệm · Giao tiếp rõ",
+      "softSkills": "Phối hợp nhóm · Clean code · Review & mentoring · Testing · Phân tích UI/UX · Chia task · Làm việc độc lập",
       "langVi": "Tiếng Việt",
       "langViLevel": "Bản ngữ",
       "langEn": "Tiếng Anh",
-      "langEnLevel": "B1 — đọc & giao tiếp cơ bản"
+      "langEnLevel": "Đọc tài liệu kỹ thuật và giao tiếp công việc"
     },
     "career": {
       "label": "Hành trình",
@@ -101,7 +101,7 @@
     "contact": {
       "label": "Ghé thăm / liên hệ",
       "title": "Cùng nói về sản phẩm tiếp theo",
-      "lead": "Mở cho vai trò thiên frontend với lộ trình fullstack. Ưu tiên email cho cơ hội công việc.",
+      "lead": "Mở cho vai trò software / frontend / fullstack. Ưu tiên email cho cơ hội công việc.",
       "email": "Email",
       "phone": "Điện thoại",
       "address": "Địa chỉ",
@@ -119,143 +119,121 @@
   },
   "projects": {
     "permate": {
-      "period": "Th8 2023 – Hiện tại",
-      "description": "Nền tảng affiliate marketing — chủ yếu sở hữu web UI/UX từ design và luồng client, nối API, review code, hỗ trợ backend khi cần, và làm tính năng Flutter cho app mobile trong team ~20 người.",
+      "period": "Th8 2023 – Th5 2026",
+      "description": "Nền tảng SaaS tự động hóa partnership cho affiliate marketing — campaign, đối tác, tracking chuyển đổi, hoa hồng và analytics real-time. Sở hữu frontend Vue/Nuxt, tích hợp REST, UI tái sử dụng, review code; stack có Flutter trong team ~20 người.",
       "highlights": [
-        "Web UI/UX (Vue / Nuxt)",
-        "Màn hình & luồng Flutter",
-        "Tích hợp API & review code"
+        "Tính năng nền tảng affiliate (Vue / Nuxt)",
+        "Component UI tái sử dụng & tích hợp REST API",
+        "Quản lý state & phối designer/backend",
+        "Review code và hỗ trợ cross-team"
+      ]
+    },
+    "vf-framework": {
+      "period": "Th6 2022 – Th7 2023",
+      "description": "Dự án migration chuyển MyBatis sang Spring Boot JPA. Làm fullstack: test luồng, đào tạo fresher/báo cáo, và học low-code để đáp ứng requirement trong team 4 người.",
+      "highlights": [
+        "MyBatis → Spring Boot JPA",
+        "Test luồng end-to-end",
+        "Đào tạo fresher & báo cáo task",
+        "Thích nghi low-code theo requirement"
       ]
     },
     "lgu": {
       "period": "Th10 2021 – Th5 2022",
-      "description": "Kênh dịch vụ số cho end user. Xây component chung, màn hình từ library, tích hợp API, unit test, phối hợp BA/BrSE/client trong team 11 người.",
+      "description": "Kênh dịch vụ số cho end user. Xây/nâng cấp component và màn hình, tích hợp REST API xuyên frontend/backend, unit test, phối hợp BA/BrSE/client trong team 11 người.",
       "highlights": [
-        "Thư viện component chung",
-        "Tích hợp màn hình & API",
-        "Unit test từng màn"
+        "Component & UI tái sử dụng",
+        "REST API + xử lý nghiệp vụ",
+        "Unit test từng màn",
+        "Phối BA / BrSE / client"
       ]
     },
     "dsh": {
       "period": "Th7 2021 – Th9 2021",
-      "description": "Landing marketing cho sản phẩm blockchain — trang, component, logic nghiệp vụ và responsive đầy đủ với tooling design system.",
+      "description": "CMS / bề mặt marketing cho sản phẩm blockchain — trang responsive, component tái sử dụng, logic nghiệp vụ và cải thiện UX với tooling design system.",
       "highlights": [
-        "Landing responsive",
-        "UI theo component",
-        "Workflow Storybook"
-      ]
-    },
-    "cinvest": {
-      "period": "Th6 2022 – Th8 2022",
-      "description": "Landing và triển khai page/component với React, Next.js trong team 4 người.",
-      "highlights": [
-        "Landing page",
-        "Component tái sử dụng"
-      ]
-    },
-    "vf-framework": {
-      "period": "Th5 2023 – Th8 2023",
-      "description": "Chuyển truy cập dữ liệu MyBatis cũ sang Spring Boot JPA, giữ kết quả khớp hệ thống cũ — làm API và lớp lưu dữ liệu trong quá trình nâng cấp Java backend.",
-      "highlights": [
-        "MyBatis → Spring Boot JPA",
-        "Kết quả tương thích legacy",
-        "Hỗ trợ REST / service layer"
+        "UI responsive & component",
+        "Implement logic nghiệp vụ",
+        "Fix UI & cải thiện UX"
       ]
     },
     "survey": {
-      "period": "Th3 2021 – Th7 2021",
-      "description": "App React Native khảo sát công nhân nhà máy, đánh giá sức khỏe, blog và Q&A — UI từ Figma, phối backend và fix bug.",
+      "period": "Th3 2021 – Th6 2021",
+      "description": "App mobile khảo sát / kiểm tra sức khỏe (We Check). Làm UI theo Figma, implement logic app, phối backend để cải thiện usability.",
       "highlights": [
         "Figma → UI mobile",
-        "Logic & luồng app"
+        "Logic & chức năng app",
+        "Phối backend cải thiện UX"
+      ]
+    },
+    "internal-crm": {
+      "period": "Th6 2021 – Th9 2021",
+      "description": "Ứng dụng nội bộ với REST API Node.js/Express (CRUD, validate, xử lý lỗi) và UI Vue — bàn giao fullstack cho hệ thống kiểu CRM/HR trong team 10 người.",
+      "highlights": [
+        "REST API Node.js / Express",
+        "CRUD, validate & error handling",
+        "UI Vue + tích hợp API",
+        "Luồng dữ liệu xuyên layer"
       ]
     }
   },
   "experience": {
     "permate": {
-      "role": "Developer",
-      "period": "Th8 2023 – Hiện tại",
+      "role": "Front-end Developer",
+      "period": "Th8 2023 – Th5 2026",
       "projects": [
         {
           "name": "Permate",
-          "period": "Th8 2023 – Hiện tại",
-          "summary": "Nền tảng affiliate. Web UI/UX (Vue/Nuxt), tính năng Flutter, tích hợp API, review code và hỗ trợ backend khi sản phẩm cần."
-        },
-        {
-          "name": "Permate Flutter App",
-          "period": "Th8 2023 – Hiện tại",
-          "summary": "Đóng góp màn hình Flutter, luồng và tính năng gắn API bên cạnh web product — mang UX mobile cho user affiliate."
+          "period": "Th8 2023 – Th5 2026",
+          "summary": "SaaS affiliate — tính năng Vue/Nuxt, UI tái sử dụng, REST API, state, review code; stack có Flutter."
         }
       ]
     },
     "fpt": {
-      "role": "Developer",
+      "role": "Fullstack Developer",
       "period": "Th10 2021 – Th8 2023",
-      "achievements": [
-        "🏆 Best Performance of BU 2022"
-      ],
       "projects": [
         {
           "name": "VF Framework",
-          "period": "Th5 2023 – Th8 2023",
-          "summary": "Chuyển MyBatis sang Spring Boot JPA, giữ kết quả khớp hệ thống cũ."
-        },
-        {
-          "name": "Ucube Slim",
-          "period": "Th1 2023 – Th5 2023",
-          "summary": "Test controller/backend và màn hình; hỗ trợ sub-leader giao việc và báo cáo."
-        },
-        {
-          "name": "Java & Low-code Training",
-          "period": "Th5 2022 – Th1 2023",
-          "summary": "Xây REST API Spring Boot/MyBatis; đào tạo WebSquare và Nexacro."
+          "period": "Th6 2022 – Th7 2023",
+          "summary": "Migration MyBatis sang Spring Boot JPA; test luồng; đào tạo fresher và học low-code theo requirement."
         },
         {
           "name": "LGU+ Digital Channel",
           "period": "Th10 2021 – Th5 2022",
-          "summary": "UI dịch vụ số Vue/Nuxt, component chung, API, test và phối stakeholder."
+          "summary": "UI dịch vụ số Vue/Nuxt, component tái sử dụng, REST API, unit test, phối BA/BrSE/client."
+        }
+      ]
+    },
+    "freelance": {
+      "role": "Front-end Developer",
+      "period": "Th6 2022 – Th8 2022",
+      "projects": [
+        {
+          "name": "Cinvest",
+          "period": "Th6 2022 – Th8 2022",
+          "summary": "Landing và component tái sử dụng với Next.js / React."
         }
       ]
     },
     "ncc": {
-      "role": "Developer / Intern",
+      "role": "Front-end Developer",
       "period": "Th4 2020 – Th9 2021",
       "projects": [
         {
           "name": "DSH",
           "period": "Th7 2021 – Th9 2021",
-          "summary": "Landing blockchain với React, Next, Gatsby và Storybook."
+          "summary": "CMS blockchain UI với React, Next, Gatsby, Styled Components và Storybook."
         },
         {
-          "name": "Survey App",
-          "period": "Th3 2021 – Th7 2021",
-          "summary": "App khảo sát nơi làm việc React Native từ design Figma."
+          "name": "We Check",
+          "period": "Th3 2021 – Th6 2021",
+          "summary": "App khảo sát sức khỏe React Native từ Figma với Redux Saga."
         },
         {
-          "name": "ToiYeuTien",
-          "period": "Th10 2020",
-          "summary": "Công cụ tính vay mua nhà và thuế bằng Vue."
-        },
-        {
-          "name": "CRM IMS / Checkpoint / Hivelab",
-          "period": "2020",
-          "summary": "CRM và HR nội bộ — tính năng, cập nhật UI, CRUD và fix bug trên Vue."
-        }
-      ]
-    },
-    "freelance": {
-      "role": "Frontend Developer",
-      "period": "2022 – 2023",
-      "projects": [
-        {
-          "name": "Cinvest",
-          "period": "Th6 2022 – Th8 2022",
-          "summary": "Landing và component Next.js."
-        },
-        {
-          "name": "OTG",
-          "period": "Th4 2023 – Th5 2023",
-          "summary": "Triển khai UI responsive từ design."
+          "name": "Internal CRM / HRM",
+          "period": "Th6 2021 – Th9 2021",
+          "summary": "REST API Node.js/Express và UI Vue cho hệ thống CRM/HR nội bộ — CRUD, validate, tích hợp layer."
         }
       ]
     }

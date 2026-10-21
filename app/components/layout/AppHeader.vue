@@ -56,41 +56,76 @@ useHead(() => ({
         >
           {{ link.label }}
         </a>
+
+        <div class="mobile-prefs">
+          <div class="prefs" role="group" :aria-label="t('ui.switchLanguage')">
+            <button
+              type="button"
+              class="pref-btn"
+              :class="{ 'is-active': locale === 'en' }"
+              :aria-pressed="locale === 'en'"
+              @click="switchLocale('en')"
+            >
+              {{ t('ui.langEn') }}
+            </button>
+            <button
+              type="button"
+              class="pref-btn"
+              :class="{ 'is-active': locale === 'vi' }"
+              :aria-pressed="locale === 'vi'"
+              @click="switchLocale('vi')"
+            >
+              {{ t('ui.langVi') }}
+            </button>
+          </div>
+          <button
+            type="button"
+            class="prefs theme-toggle"
+            :aria-label="t('ui.toggleTheme')"
+            :aria-pressed="isDark"
+            @click="toggleTheme"
+          >
+            <span class="pref-btn is-active">{{ isDark ? t('ui.themeLight') : t('ui.themeDark') }}</span>
+          </button>
+        </div>
+
         <a class="btn btn-primary nav-cta mobile-only" href="#contact" @click="closeNav">
           {{ t('ui.contactMe') }}
         </a>
       </nav>
 
       <div class="aside">
-        <div class="prefs" role="group" :aria-label="t('ui.switchLanguage')">
+        <div class="desktop-prefs">
+          <div class="prefs" role="group" :aria-label="t('ui.switchLanguage')">
+            <button
+              type="button"
+              class="pref-btn"
+              :class="{ 'is-active': locale === 'en' }"
+              :aria-pressed="locale === 'en'"
+              @click="switchLocale('en')"
+            >
+              {{ t('ui.langEn') }}
+            </button>
+            <button
+              type="button"
+              class="pref-btn"
+              :class="{ 'is-active': locale === 'vi' }"
+              :aria-pressed="locale === 'vi'"
+              @click="switchLocale('vi')"
+            >
+              {{ t('ui.langVi') }}
+            </button>
+          </div>
           <button
             type="button"
-            class="pref-btn"
-            :class="{ 'is-active': locale === 'en' }"
-            :aria-pressed="locale === 'en'"
-            @click="switchLocale('en')"
+            class="prefs theme-toggle"
+            :aria-label="t('ui.toggleTheme')"
+            :aria-pressed="isDark"
+            @click="toggleTheme"
           >
-            {{ t('ui.langEn') }}
-          </button>
-          <button
-            type="button"
-            class="pref-btn"
-            :class="{ 'is-active': locale === 'vi' }"
-            :aria-pressed="locale === 'vi'"
-            @click="switchLocale('vi')"
-          >
-            {{ t('ui.langVi') }}
+            <span class="pref-btn is-active">{{ isDark ? t('ui.themeLight') : t('ui.themeDark') }}</span>
           </button>
         </div>
-        <button
-          type="button"
-          class="prefs theme-toggle"
-          :aria-label="t('ui.toggleTheme')"
-          :aria-pressed="isDark"
-          @click="toggleTheme"
-        >
-          <span class="pref-btn is-active">{{ isDark ? t('ui.themeLight') : t('ui.themeDark') }}</span>
-        </button>
         <a class="btn btn-primary nav-cta desktop-only" href="#contact">{{ t('ui.contactMe') }}</a>
         <button
           class="menu-toggle"
@@ -177,6 +212,16 @@ useHead(() => ({
   min-width: 0;
 }
 
+.desktop-prefs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mobile-prefs {
+  display: none;
+}
+
 .prefs {
   display: inline-flex;
   align-items: center;
@@ -240,13 +285,14 @@ useHead(() => ({
 }
 
 @media (max-width: 900px) {
-  .desktop-only {
+  .desktop-only,
+  .desktop-prefs {
     display: none;
   }
 
   .mobile-only {
     display: inline-flex;
-    margin-top: 0.5rem;
+    margin-top: 0.35rem;
     width: fit-content;
   }
 
@@ -282,6 +328,17 @@ useHead(() => ({
     padding: 0.85rem 0;
     border-bottom: 1px solid var(--color-line);
   }
+
+  .mobile-prefs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+    width: 100%;
+    margin-top: 0.85rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--color-line);
+  }
 }
 
 @media (max-width: 480px) {
@@ -291,23 +348,6 @@ useHead(() => ({
 
   .brand {
     font-size: 1rem;
-  }
-
-  .aside {
-    gap: 0.35rem;
-  }
-
-  .prefs {
-    gap: 0.1rem;
-  }
-
-  .pref-btn {
-    padding: 0.3rem 0.35rem;
-    font-size: 0.65rem;
-  }
-
-  .theme-toggle .pref-btn {
-    min-width: 2.6rem;
   }
 
   .menu-toggle {
