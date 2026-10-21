@@ -380,7 +380,7 @@ export const portfolio = {
     {
       id: 'my-portfolio',
       name: 'My Portfolio',
-      demoUrl: 'https://my-portfolio-drab-phi-hko31oj1lt.vercel.app/',
+      demoUrl: 'https://dat-profile-developer.vercel.app/',
       githubUrl: 'https://github.com/thanhdat130298/my-portfolio',
       stack: ['Nuxt 4', 'Vue 3', 'TypeScript', 'CSS'],
     },
@@ -415,7 +415,7 @@ export const portfolio = {
     address: 'Hoa Xuan, Cam Le, Da Nang',
     facebook: 'facebook.com/thanhdat130298',
     facebookUrl: 'https://facebook.com/thanhdat130298',
-    demoUrl: 'https://my-portfolio-drab-phi-hko31oj1lt.vercel.app/',
+    demoUrl: 'https://dat-profile-developer.vercel.app/',
   } as ContactInfo,
 
   languages: [
